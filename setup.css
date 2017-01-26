@@ -53,11 +53,6 @@ input {
 	    margin: 10px 0px 10px 80px;
 }
 
-.header-bar {
-		position: fixed;
-		width: 99%;
-}
-
 .hover-item {
 		cursor: pointer;
 }
@@ -77,7 +72,7 @@ input {
 		border-color: rgb(80,80,80);
 		border-radius: 5px;
 		list-style-type: none;
-		margin: 55px 0px 5px 0px;
+		margin: 10px 0px 10px 0px;
 		padding: 0;
 		overflow: hidden;
 		width: 99.5%;

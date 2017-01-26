@@ -103,7 +103,7 @@ function addFunctionsBySection(json, sec)
 		    	functionTitle = functionTitle.substring(0, functionTitle.length - 2) + " ";
 		    }
 
-		    func.innerHTML = json[data].ReturnValue + " " + functionTitle + ")";
+		    func.innerHTML = functionTitle + ")";
 		    func.className = "function-title";
 		    container.appendChild(func);
 
@@ -127,6 +127,7 @@ function addFunctionsBySection(json, sec)
 		    }
 
 		    description.innerHTML += "<b>Category:</b> " + json[data].Category + "\n"
+		    						+ "<b>Return Value:</b> " + json[data].ReturnValue + "\n"
 		    						+ "<b>Description:</b> " + json[data].Description + "\n"
 		    						+ "<b>Example:</b> " + json[data].Example;
 		    description.className = "function-text";
