@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>JBird | Home</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/jbird_icon.ico" />
+		<link rel="stylesheet" href="setup.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+		<div> <!-- Header Bar -->
+				<ul>
+						<li><a href="\index.html"></i>Home <i class="fa fa-home" style="font-size:12px"></i></a></li>
+						<li><a href="\downloads.html">Downloads <i class="fa fa-download" style="font-size:12px"></i></a></li>
+						<li><a class="active" href="\tutorials.html">Tutorials <i class="fa fa-graduation-cap" style="font-size:12px"></i></a></li>
+						<li><a href="\models.html">Models <i class="fa fa-cube" style="font-size:12px"></i></a></li>
+						
+						<li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Projects <i class="fa fa-chevron-down" style="font-size:12px"></i></a>
+								<div class="dropdown-content">
+										<a href="\kepler.html">Kepler</a>
+										<a href="\project_sleep.html">Project Sleep</a>
+								</div>
+						 </li>
+
+						 <li><a href="\script_reference.html">Script Reference <i class="fa fa-code" style="font-size:12px"></i></a></li>
+						 
+						 <img class="imgIcon" src="images/jbird_icon.ico" alt="JBird Icon">
+						 <li style="float:right"><a href="\info.html"><b>JBird632</b></a></li>
+				</ul>
+		</div>
+		<br>
+		<div > <!-- Banner -->
+				<img class="imgBanner" src="images/jbird_banner.png" alt="Page Banner">
+		</div>
+		<br>
+		<div class="bodyFormat"> <!-- Page Body -->
+				<h1 class="bodyTitle">Tutorials</h1>
+
+				<pre class = "code-select">Code:<button type="link" class="link">[Select]</button></pre>
+				<div class="code-block"><pre class="code-line" id="testCode">
+#namespace zm_clientBox;
+
+function init()
+{
+	/*
+		Including Weapons into the Mystery Box
+
+		Every weapon requires its own line, this will add that specific weapon into the Mystery Box.
+		This script is used to show the weapons in the box, since the visual spinning of the box is handeled 
+		separtely from the actual weapon it gives you.
+
+		Function: registerBoxWeapon( name, model, dualWield );
+		name: The name of the weapon (same as the /give <weapon> name)
+		model: The name of the world model of the weapon to be shown in the box (same as the world model in the weapon file)
+		Example: registerBoxWeapon( "ak47", "wpn_ak47_world", false );
+	*/
+
+	ResetZombieBoxWeapons(); // Don't touch, this clears the current box "test"
+	registerBoxWeapon( "cymbal_monkey", false );
+	registerBoxWeapon( "ray_gun", false );
+	registerBoxWeapon( "tesla_gun", false );
+	registerBoxWeapon( "ar_accurate", false );
+	registerBoxWeapon( "ar_damage", false );
+	registerBoxWeapon( "ar_marksman", false );
+	registerBoxWeapon( "lmg_cqb", false );
+	registerBoxWeapon( "lmg_heavy", false );
+	registerBoxWeapon( "lmg_light", false );
+	registerBoxWeapon( "lmg_slowfire", false );
+	registerBoxWeapon( "shotgun_fullauto", false );
+	registerBoxWeapon( "shotgun_precision", false );
+	registerBoxWeapon( "shotgun_semiauto", false );
+	registerBoxWeapon( "launcher_standard", false );
+	registerBoxWeapon( "smg_burst", false );
+	registerBoxWeapon( "smg_capacity", false );
+	registerBoxWeapon( "smg_versatile", false );
+	registerBoxWeapon( "sniper_fastbolt", false );
+	registerBoxWeapon( "sniper_fastsemi", false );
+	registerBoxWeapon( "sniper_powerbolt", false );
+	registerBoxWeapon( "octobomb", false );
+	registerBoxWeapon( "smg_sten", false );
+	registerBoxWeapon( "raygun_mark3", false );
+	registerBoxWeapon( "ar_famas", false );
+	registerBoxWeapon( "ar_garand", false );
+	registerBoxWeapon( "smg_mp40", false );
+	registerBoxWeapon( "smg_ppsh", false );
+	registerBoxWeapon( "special_crossbow_dw", true );
+	registerBoxWeapon( "ar_peacekeeper", false );
+	registerBoxWeapon( "pistol_energy", false );
+	registerBoxWeapon( "shotgun_energy", false );
+	registerBoxWeapon( "smg_thompson", false );
+	registerBoxWeapon( "thundergun", false );
+	registerBoxWeapon( "launcher_multi", false );
+}
+
+function registerBoxWeapon( name, dualWield )
+{
+	if( !isDefined( name ))
+		return;
+
+	isDualWield = false;
+
+	if(isDefined( dualWield ))
+		isDualWield = dualWield;
+
+	weapon = GetWeapon( name );
+	model = GetWeaponWorldModel( weapon );
+	
+	AddZombieBoxWeapon(weapon, model, isDualWield);
+}				</pre></div>
+		</div>
+
+		<script src="gsc_syntax.js"></script>
+</body>
+
+</html>

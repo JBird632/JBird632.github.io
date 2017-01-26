@@ -1,0 +1,323 @@
+html, body {
+		font-family: "Arial";
+		font-style: normal;
+		background-color: rgb(100,100,100);
+		background-image: url("/images/tile_bg.png");
+}
+
+ul {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(80,80,80);
+		border-radius: 5px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		background-color: #333;
+}
+
+li {
+		float: left;
+}
+
+li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+}
+
+li a:hover:not(.active) {
+		background-color: rgb(80,80,80);
+}
+
+li a:hover(.active), .dropdown:hover:not(.active) .dropbtn{
+		background-color: rgb(150,30,30);
+}
+
+li.dropdown {
+		display: inline:block;
+}
+
+input {
+		float: right;
+	    width: 250px;
+	    height: 25px;
+	    box-sizing: border-box;
+	    border: 2px solid #ccc;
+	    border-color: rgb(150,150,150);
+	    border-radius: 4px;
+	    font-size: 16px;
+	    margin: 10px 0px 10px 80px;
+}
+
+.header-bar {
+		position: fixed;
+		width: 99%;
+}
+
+.hover-item {
+		cursor: pointer;
+}
+
+.imgIcon {
+		float: right;
+		width: 35px;
+		border-radius: 50%;
+		display: block;
+		padding: 6px 6px;
+		text-decoration: none;
+}
+
+.imgBanner {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(80,80,80);
+		border-radius: 5px;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		width: 99.5%;
+		background-color: #333;
+}
+
+.bodyFormat {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(30,30,30);
+		list-style-type: none;
+		margin: 0px 30px 10px 30px;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(80,80,80);
+		box-shadow: 0px 0px 20px black;
+}
+
+.funcFormat {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(30,30,30);
+		list-style-type: none;
+		margin: 0px 30px 10px 30px;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(80,80,80);
+		box-shadow: 0px 0px 20px black;
+}
+
+.bodyFormat-inset {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(100,100,100);
+		list-style-type: none;
+		margin: 0px 30px 10px 30px;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(80,80,80);
+		box-shadow: 0px 0px 5px black;
+}
+
+.bodyTitle {
+		list-style-type: none;
+		margin: 10px;
+		padding: 0;
+		overflow: hidden;
+		color: rgb(200,200,200);
+		text-shadow: 0px 0px 8px black;
+}
+
+.bodyText {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(200,200,200);
+		border-radius: 5px;
+		list-style-type: none;
+		margin: 10px;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(50,50,50);
+		color: white;
+}
+
+.function-title {
+		list-style-type: none;
+		margin: 10px 2px 10px 2px;
+		padding: 4px 10px 4px 10px;
+		overflow: hidden;
+		color: rgb(200,200,200);
+		text-shadow: 0px 0px 8px black;
+		background-color: rgb(40,40,40);
+		width: 100%;
+}
+
+.function-text {
+		font-family: "Arial";
+		font-style: normal;
+		font-size: 16px;
+		text-shadow: 0px 0px 4px black;
+		color: rgb(200,200,200);
+		margin: 20px;
+}
+
+.ref-block {
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(120,120,120);
+		border-radius: 5px;
+		list-style-type: none;
+		margin: 10px;
+		padding: 0;
+		overflow: hidden;
+		background-color: rgb(50,50,50);
+		color: white;
+		display: inherit;
+}
+
+.dropdown-content {
+		border-style: solid;
+		border-width: 3px;
+		border-color: rgb(80,80,80);
+		display: none;
+		position: absolute;
+		background-color: #333;
+		min-width: 160px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+		color: white;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+}
+
+.dropdown-content a:hover {
+		background-color: rgb(80,80,80);
+}
+
+.dropdown:hover .dropdown-content {
+		display: block;
+}
+
+.active {
+		background-color: rgb(100,30,30);
+}
+
+.code-select {
+		margin: 10px 0px 0px 20px;
+		color: rgb(200,200,200);
+}
+
+.link {
+		color: white;
+		background: none;
+		border: none;
+		cursor:pointer;
+}
+
+.function-block {
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(40,40,40);
+		list-style-type: none;
+		margin: 5px 20px 20px 20px;
+		padding: 0;
+		overflow: hidden;
+		background-color: #3C4142;
+}
+
+.code-block {
+		border-style: solid;
+		border-width: 2px;
+		border-color: rgb(40,40,40);
+		list-style-type: none;
+		margin: 5px 20px 20px 20px;
+		padding: 0;
+		overflow: hidden;
+		background-color: #3A3F39;
+}
+
+.code-line {
+		display: inline-block;
+		margin: 5px;
+		color: rgb(200,200,200);
+		height: auto;
+	    max-height: 200px;
+	    width: 99%;
+	    overflow: auto;
+	    word-break: normal !important;
+	    word-wrap: normal !important;
+	    white-space: pre !important;
+}
+
+.side-bar-ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		width: 25%;
+		background-color: #f1f1f1;
+		position: fixed;
+		height: 100%;
+		overflow: auto;
+}
+
+.side-bar-li {
+		display: block;
+	    color: #000;
+	    padding: 8px 16px;
+	    text-decoration: none;
+	    float: none;
+}
+
+.hide-block {
+		margin: 0px;
+
+}
+
+#snackbar {
+    visibility: hidden;
+    min-width: 150px;
+    margin-left: -75px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+   	border-color: rgb(20,20,20);
+   	border-style: solid;
+	border-width: 1px;
+}
+
+#snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
