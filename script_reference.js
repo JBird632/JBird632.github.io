@@ -50,7 +50,6 @@ function addFunctionsByCategory(json, cat)
 
 function addFunctionsBySection(json, sec)
 {
-	var count = 0;
 	var functions= [];
 	var div = document.getElementById("category-ref-" + sec);
 
@@ -70,7 +69,6 @@ function addFunctionsBySection(json, sec)
 		    func.style = "cursor: pointer";
 		    func.addEventListener("click", function()
 		    	{
-		    		console.log(this.parentElement);
 		    		var parent = this.parentElement;
 		    		var children = parent.childNodes;
 		    		
@@ -204,7 +202,7 @@ function updateSearch()
 	{
 		for( var i = 0; i < sections.length; i++ )
 		{
-			var children = sections.childNodes;
+			var children = sections[i].childNodes;
 			var closeSection = true;
 
 			for( var j = 1; j < children.length; j++ )
