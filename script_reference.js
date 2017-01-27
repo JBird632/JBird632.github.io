@@ -195,42 +195,28 @@ function updateSearch()
 {
 	var input = document.getElementById('serachBar');
 	var filter = input.value.toUpperCase();
-	var div = document.getElementsByClassName("bodyFormat")[0];
-	var sections = document.getElementsByClassName("ref-block");
+	var div = document.getElementsByClassName("bodyFormat-inset");
 
-	if(activeID == 'ref-all')
+	for( var i = 0; i < div.length; i++ )
 	{
-		for( var i = 0; i < sections.length; i++ )
-		{
-			var children = sections[i].childNodes;
-			var closeSection = true;
+		var children = div[i].childNodes;
 
-			for( var j = 2; j < children.length; j++ )
+		var closeSection = true;
+
+		for( var j = 2; j < children.length; j++ )
+		{
+			if(j == 2)
+				console.log(children[2]);
+			if(children[j].innerHTML.includes(filter))
 			{
-				if(j == 2)
-					console.log(children[2]);
-				if(children[j].innerHTML.includes(filter))
-				{
-					closeSection = false;
-					children[j].style.display = 'inherit';
-				}
-				else
-					children[j].style.display = 'none';
+				closeSection = false;
+				children[j].style.display = 'inherit';
 			}
-
-			if(closeSection)
-				children[0].style.display = 'inherit';
-		}
-	}
-	else
-	{
-		var section = document.getElementById('category-' + activeID);
-
-		for( var i = 0; i < sections.length; i++ )
-		{
-			sections[i].style.display = 'none';
+			else
+				children[j].style.display = 'none';
 		}
 
-		section.style.display = 'inherit';
+		//if(closeSection)
+		//	children[0].style.display = 'inherit';
 	}
 }
