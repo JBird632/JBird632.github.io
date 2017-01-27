@@ -207,6 +207,8 @@ function updateSearch()
 
 			for( var j = 1; j < children.length; j++ )
 			{
+				if(j == 1)
+					console.log(children[1]);
 				if(children[j].innerHTML.includes(filter))
 				{
 					closeSection = false;
