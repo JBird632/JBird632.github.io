@@ -288,6 +288,17 @@ input {
 	    animation-delay: 1s;
 }
 
+.alert-hidden {
+		padding: 20px;
+		background-color: rgb(30,30,30);
+		color: white;
+		margin-bottom: 15px;
+		position: fixed;
+		z-index: 1;
+   		bottom: 0;
+   		left: -100%;
+}
+
 .alertClose {
 		padding: 20px;
 		background-color: rgb(30,30,30);

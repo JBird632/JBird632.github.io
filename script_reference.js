@@ -197,6 +197,9 @@ function updateSearch()
 	var filter = input.value.toUpperCase();
 	var div = document.getElementsByClassName("bodyFormat-inset");
 
+	document.getElementById("reference-alert").className = "alertClose";
+	document.getElementById("search-bar-alert").className = "alert";
+
 /*
 	for( var i = 0; i < div.length; i++ )
 	{
