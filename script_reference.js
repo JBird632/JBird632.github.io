@@ -192,3 +192,45 @@ function clearFunctions(id)
 		}
 	}
 }
+
+function updateSearch()
+{
+	var input = document.getElementById('serachBar');
+	var filter = input.value.toUpperCase();
+	var div = document.getElementsByClassName("bodyFormat")[0];
+	var sections = document.getElementsByClassName("ref-block");
+
+	if(activeID == 'ref-all')
+	{
+		for( var i = 0; i < sections.length; i++ )
+		{
+			var children = sections.childNodes;
+			var closeSection = true;
+
+			for( var j = 1; j < children.length; j++ )
+			{
+				if(children[j].innerHTML.includes(filter))
+				{
+					closeSection = false;
+					children[j].style.display = 'inherit';
+				}
+				else
+					children[j].style.display = 'none';
+			}
+
+			if(closeSection)
+				children[0].style.display = 'inherit';
+		}
+	}
+	else
+	{
+		var section = document.getElementById('category-' + activeID);
+
+		for( var i = 0; i < sections.length; i++ )
+		{
+			sections[i].style.display = 'none';
+		}
+
+		section.style.display = 'inherit';
+	}
+}
