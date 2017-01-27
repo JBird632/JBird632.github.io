@@ -111,7 +111,7 @@ function addFunctionsBySection(json, sec)
 
 		    if(functionTitle[functionTitle.length-2] == ',')
 		    {
-		    	functionTitle = "<span style='cursor:text;'>" + functionTitle.substring(0, functionTitle.length - 2) "</span>" + "&nbsp;";
+		    	functionTitle = "<span style='cursor:text'>" + functionTitle.substring(0, functionTitle.length - 2) + "</span>" + "&nbsp;";
 		    }
 
 		    func.innerHTML = "&nbsp;<i class='fa fa-chevron-right' id='icon-" + sec + "' aria-hidden='true'></i> | " + functionTitle + ")";
