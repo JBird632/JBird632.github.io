@@ -93,7 +93,7 @@ function addFunctionsBySection(json, sec)
 		    		else
 		    		{
 		    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-down", "fa-chevron-right");
-		    			children[0].innerHTML = " " + children[0].innerHTML;
+		    			children[0].innerHTML = "&nbsp;" + children[0].innerHTML;
 		    		}
 		    	});
 
@@ -111,7 +111,7 @@ function addFunctionsBySection(json, sec)
 
 		    if(functionTitle[functionTitle.length-2] == ',')
 		    {
-		    	functionTitle = functionTitle.substring(0, functionTitle.length - 2) + " ";
+		    	functionTitle = "<span style='cursor:text;'>" + functionTitle.substring(0, functionTitle.length - 2) "</span>" + "&nbsp;";
 		    }
 
 		    func.innerHTML = "&nbsp;<i class='fa fa-chevron-right' id='icon-" + sec + "' aria-hidden='true'></i> | " + functionTitle + ")";
