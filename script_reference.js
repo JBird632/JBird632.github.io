@@ -84,6 +84,15 @@ function addFunctionsBySection(json, sec)
 		    		{
 		    			children[1].style.display = 'none';
 		    		}
+
+		    		if(children[0].innerHTML.includes("fa-chevron-right"))
+		    		{
+		    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-right", "fa-chevron-down");
+		    		}
+		    		else
+		    		{
+		    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-down", "fa-chevron-right");
+		    		}
 		    	});
 
 		    var functionTitle = json[data].Function + "( ";
