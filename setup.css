@@ -278,6 +278,8 @@ input {
 		background-color: rgb(30,30,30);
 		color: white;
 		margin-bottom: 15px;
+		position: fixed;
+   		bottom: 10;
 }
 
 .closebtn {
