@@ -197,6 +197,7 @@ function updateSearch()
 	var filter = input.value.toUpperCase();
 	var div = document.getElementsByClassName("bodyFormat-inset");
 
+/*
 	for( var i = 0; i < div.length; i++ )
 	{
 		var children = div[i].childNodes;
@@ -218,5 +219,5 @@ function updateSearch()
 
 		//if(closeSection)
 		//	children[0].style.display = 'inherit';
-	}
+	}*/
 }

@@ -279,7 +279,26 @@ input {
 		color: white;
 		margin-bottom: 15px;
 		position: fixed;
-   		bottom: 10;
+		z-index: 1;
+   		bottom: 0;
+   		left: -100%;
+   		-webkit-animation: slide 0.5s forwards;
+	    -webkit-animation-delay: 1s;
+	    animation: slide 0.5s forwards;
+	    animation-delay: 1s;
+}
+
+.alertClose {
+		padding: 20px;
+		background-color: rgb(30,30,30);
+		color: white;
+		margin-bottom: 15px;
+		position: fixed;
+		z-index: 1;
+   		bottom: 0;
+   		left: 0;
+   		-webkit-animation: slideBack 0.5s forwards;
+	    animation: slideBack 0.5s forwards;
 }
 
 .closebtn {
@@ -295,4 +314,20 @@ input {
 
 .closebtn:hover {
     	color: black;
+}
+
+@-webkit-keyframes slide {
+    100% { left: 0; }
+}
+
+@keyframes slide {
+    100% { left: 0; }
+}
+
+@-webkit-keyframes slideBack {
+    100% { left: -100%; }
+}
+
+@keyframes slideBack {
+    100% { left: -100%; }
 }
