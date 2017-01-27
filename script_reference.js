@@ -7,7 +7,6 @@ $.getJSON("bo3_reference.json", function(json) {
     var sections = document.getElementsByClassName('ref-block');
     oldDisplay = sections[0].display;
 
-    messageAlert( "loading_reference" );
     addFunctionsBySection(json, "ai");
     addFunctionsBySection(json, "animation");
     addFunctionsBySection(json, "client");
@@ -26,7 +25,6 @@ $.getJSON("bo3_reference.json", function(json) {
     addFunctionsBySection(json, "vehicle");
     addFunctionsBySection(json, "weapon");
     addFunctionsBySection(json, "zombie");
-    clearAlert();
 });
 
 function addAllFunctions(json)
