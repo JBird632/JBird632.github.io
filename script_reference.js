@@ -103,12 +103,9 @@ function addFunctionsBySection(json, sec)
 		    	functionTitle = functionTitle.substring(0, functionTitle.length - 2) + " ";
 		    }
 
-		    func.innerHTML = functionTitle + ")";
+		    func.innerHTML = "<i class='fa fa-chevron-right' aria-hidden='true'></i> " + functionTitle + ")";
 		    func.className = "function-title";
 
-		    var btn = document.createElement("button");
-
-		    container.appendChild(btn);
 		    container.appendChild(func);
 
 		    str = "";
