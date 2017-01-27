@@ -70,6 +70,32 @@ function addFunctionsBySection(json, sec)
 
 		    var func = document.createElement("h3");
 		    func.style = "cursor: pointer";
+		    func.addEventListener("click", function()
+		    	{
+		    		console.log(this.parentElement);
+		    		var parent = this.parentElement;
+		    		var children = parent.childNodes;
+		    		
+		    		if(children[1].style.display === 'none')
+		    		{
+		    			children[1].style.display = 'block';
+		    		}
+		    		else
+		    		{
+		    			children[1].style.display = 'none';
+		    		}
+
+		    		if(children[0].innerHTML.includes("fa-chevron-right"))
+		    		{
+		    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-right", "fa-chevron-down");
+		    			children[0].innerHTML = children[0].innerHTML.replace("&nbsp;", "");
+		    		}
+		    		else
+		    		{
+		    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-down", "fa-chevron-right");
+		    			children[0].innerHTML = " " + children[0].innerHTML;
+		    		}
+		    	});
 
 		    var functionTitle = json[data].Function + "( ";
 		    var str = "";
@@ -90,34 +116,6 @@ function addFunctionsBySection(json, sec)
 
 		    func.innerHTML = "&nbsp;<i class='fa fa-chevron-right' id='icon-" + sec + "' aria-hidden='true'></i> | " + functionTitle + ")";
 		    func.className = "function-title";
-
-		    icon = document.getElementById("icon-" + sec);
-		    icon.addEventListener("click", function()
-	    	{
-	    		console.log(this.parentElement);
-	    		var parent = this.parentElement.parentElement;
-	    		var children = parent.childNodes;
-	    		
-	    		if(children[1].style.display === 'none')
-	    		{
-	    			children[1].style.display = 'block';
-	    		}
-	    		else
-	    		{
-	    			children[1].style.display = 'none';
-	    		}
-
-	    		if(children[0].innerHTML.includes("fa-chevron-right"))
-	    		{
-	    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-right", "fa-chevron-down");
-	    			children[0].innerHTML = children[0].innerHTML.replace("&nbsp;", "");
-	    		}
-	    		else
-	    		{
-	    			children[0].innerHTML = children[0].innerHTML.replace("fa-chevron-down", "fa-chevron-right");
-	    			children[0].innerHTML = " " + children[0].innerHTML;
-	    		}
-	    	});
 
 		    container.appendChild(func);
 
