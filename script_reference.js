@@ -205,10 +205,10 @@ function updateSearch()
 			var children = sections[i].childNodes;
 			var closeSection = true;
 
-			for( var j = 1; j < children.length; j++ )
+			for( var j = 2; j < children.length; j++ )
 			{
-				if(j == 1)
-					console.log(children[1]);
+				if(j == 2)
+					console.log(children[2]);
 				if(children[j].innerHTML.includes(filter))
 				{
 					closeSection = false;
