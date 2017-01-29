@@ -1,0 +1,25 @@
+<b>Description</b>
+Kepler is a custom Zombies map for Call of Duty: Black Ops III. With the power of the Black Ops III mod tools, 
+Kepler will be one of the most ambitious maps to date. Kepler takes place in the distant future, with the setting 
+revolved around space travel and different evironments. The map is mean't to have a huge sense of scale, yet 
+still traversable in many ways. Players find themselves on a spaceship in search for new life, and the hopes to 
+find a planet suitable for the migration of the human race. In this twisted future, Earth is slowly dying and on 
+the verge of running out of researches. People suffer from famine and water is a commodity. We have become 
+desparite to find a new place to live, and hopefully we find it soon.
+
+<b>Creators</b>
+The creators on the map are non other than two of the members of the Leviathan team:
+
+<b>JBird632</b>	
+Roles:		Main Mapper | Mod Designer
+Projects:		<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,2824.0.html">Overrun</span>
+			<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,2477.0.html">Lockdown</span>
+			<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,5147.msg57213.html#msg57213">Snowglobe</span>
+			<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,6039.0.html">Leviathan</span>
+
+<b>Awesome Pieman</b>
+Roles:		Main Scripter | Easter Egg Designer
+Projects:		<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,2710.0.html">The Swan</span>
+			<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,6039.0.html">Leviathan</span>
+			<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,3402.0.html">Halloween Town</span>
+			<span style="text-align: center;" href="https://ugx-mods.com/forum/index.php/topic,12477.0.html">Ragnarok</span>

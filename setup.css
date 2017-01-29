@@ -66,6 +66,15 @@ input {
 		text-decoration: none;
 }
 
+.planetIcon {
+		float: left;
+		width: 100px;
+		border-radius: 50%;
+		display: block;
+		padding: 6px 6px;
+		text-decoration: none;
+}
+
 .imgBanner {
 		border-style: solid;
 		border-width: 3px;
@@ -96,11 +105,12 @@ input {
 		border-width: 3px;
 		border-color: rgb(30,30,30);
 		list-style-type: none;
-		margin: 0px 30px 10px 30px;
+		margin: 10px 5% 10px 5%;
 		padding: 0;
 		overflow: hidden;
 		background-color: rgb(80,80,80);
 		box-shadow: 0px 0px 20px black;
+		width: 90%;		
 }
 
 .bodyFormat-inset {
@@ -155,6 +165,16 @@ input {
 		text-shadow: 0px 0px 4px black;
 		color: rgb(200,200,200);
 		margin: 20px;
+}
+
+.fill-text {
+		font-family: "Arial";
+		font-style: normal;
+		font-size: 16px;
+		text-shadow: 0px 0px 4px black;
+		color: rgb(200,200,200);
+		margin: 20px;
+		overflow: hidden;
 }
 
 .ref-block {
@@ -341,4 +361,97 @@ input {
 
 @keyframes slideBack {
     100% { left: -100%; }
+}
+
+.image-model {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.image-model-picture {
+    margin: auto;
+    display: block;
+    width: 65%;
+}
+
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+.image-model-picture, #caption { 
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+.model-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.model-close:hover,
+.model-close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+.clickable-image {
+		cursor: pointer;
+    	transition: 0.3s;
+		border-style: solid;
+		border-width: 0.15%;
+		border-color: rgb(100,100,100);
+		list-style-type: none;
+		padding: 0;
+		overflow: hidden;
+		padding: 0.15%;
+		background-color: rgb(80,80,80);
+		box-shadow: 0px 0px 5px black;
+		width: 19%;
+		height: auto;
+		margin: 0.15%;
+}
+
+.clickable-image:hover {
+		border-color: rgb(150,30,30);
+		opacity: 0.7;
 }

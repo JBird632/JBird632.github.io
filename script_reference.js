@@ -153,7 +153,7 @@ function setActiveTab(id)
 	newTab.className = 'active';
 	activeID = id;
 
-	clearFunctions(id);
+	//clearFunctions(id);
 
 	if(id == 'ref-all')
 	{
