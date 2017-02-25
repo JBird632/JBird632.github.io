@@ -693,9 +693,6 @@ function setupTutorialTemplate()
 		}
 	}
 	
-	if(tutorial.content != "")
-		console.log(tutorial.content);
-	
 	resizedEvent();
 }
 

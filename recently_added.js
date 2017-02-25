@@ -64,17 +64,12 @@ function loadRecentlyAdded(json)
 
 function setupClickableImages()
 {
-    console.log('Workgin?');
     var images = document.getElementsByClassName('clickable-image');
-    console.log(images);
-    console.log(images.length);
 
     for( var i = 0; i < images.length; i++ )
     {
-        console.log('Here');
         images[i].onclick = function()
         {
-            console.log('Clicked');
             var modal = document.getElementsByClassName('image-model')[0];
             var modalImg = document.getElementsByClassName("model-display-image")[0];
             var span = document.getElementById("close");

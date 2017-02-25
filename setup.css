@@ -62,14 +62,19 @@ footer
 
 section
 {
-	float: left;
-	width: 80%;
+	position: fixed;
+	width: 100%;
+	z-index: 1;
 }
 
 aside
 {
-	float: right;
+	position: fixed;
+	right: 0px;
+	margin-top: 10px;
 	width: 20%;
+	text-align: right;
+	z-index: 10;
 }
 
 /* 	-------------------------------------------------------------------------------------------
@@ -287,12 +292,13 @@ aside
 	Aside
 */
 
-.item-container
+.item-container-side
 {
+	text-align: left;
 	margin: 10px;
 	padding: 10px;
+	background-color: rgb(40, 45, 50);
 	box-shadow: 0px 0px 10px #515151;
-	background-color: white;
 }
 
 .spacing-medium
