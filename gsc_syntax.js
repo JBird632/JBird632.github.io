@@ -1,8 +1,27 @@
-setSyntaxColour();
-
-function setSyntaxColour()
+$.getJSON("bo3_reference.json", function(json)
 {
-	var codeBlocks = document.getElementsByClassName('code-line');
+	var functions = [];
+
+	for( var data in json)
+    {
+    	var str = json[data].Function;
+
+    	if(str.indexOf("<") == 0)
+    	{
+    		var idx = str.indexOf(">");
+    		var rep = str.substring(0,idx+2);
+    		str = str.replace(rep, "");
+    	}
+
+    	functions.push(str);
+    }
+
+    setSyntaxColour(functions)
+});
+
+function setSyntaxColour(functions)
+{
+	var codeBlocks = document.getElementsByClassName('codeBox');
 	var replace = new RegExp('temp', 'g');
 	var str = "";
 	var comments = [];
@@ -15,12 +34,9 @@ function setSyntaxColour()
 	var j = 0;
 	var keyWords = ['#using', '#namespace', 'function', 'wait', 'endon', 'notify', 'waittill', 'for', 'while', 'if', 'size', 'else', 'return'];
 	var variables = ['false', 'true', 'level', 'self', '0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
-	var functions = ['AddZombieBoxWeapon', 'AllowActionSlotInput', 'AllowedStances', 'AnimScripted', 'ArraySort', 'Attach', 'AttachShieldModel', 'AttachWeapon', 'BulletTrace', 'BulletTracePassed'];
-
+	
 	for( i = 0; i < codeBlocks.length; i++ )
 	{
-		console.log("Converting Code Block");
-
 		// Comments
 		var strLength = codeBlocks[i].innerHTML.length;
 	  	idxStart = 0;

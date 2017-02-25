@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>JBird | Tutorials</title>
+	<title>JBird | Contact</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="shortcut icon" type="image/x-icon" href="images/jbird_icon.ico" />
@@ -17,13 +17,13 @@
 <body class='body'>
 	<header>
 		<span class='title-text title-slide'>&nbspJBird632</span>
-		<span class='content-text'>Tutorials</span>
+		<span class='content-text'>Contact</span>
 		<a href='contact.html' class='sidebar-link right' style='height: 35px; padding: 8px 20px; font-weight: bold;'>Contact</a>
 	</header>
-	
+
 	<header class='sub-header'>
 		<a class='breadcrumb-text' href='index.html'>Home</a>
-		<span class='breadcrumb-text'> / Tutorials</span>
+		<span class='breadcrumb-text'> / Contact</span>
 	</header>
 	
 	<div class='sidebar-slide'>
@@ -38,7 +38,7 @@
 		<li class='sidebar-item'><a class='sidebar-link' href='models.html'><i class="fa fa-cube" aria-hidden="true"></i>&nbsp&nbspModels</a></li>
 		
 		<li class='sidebar-header'>Modding</li>
-		<li class='sidebar-item-active'><a class='sidebar-link sidebar-link-active' href='tutorials.html'><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp&nbspTutorials</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='tutorials.html'><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp&nbspTutorials</a></li>
 		<li class='sidebar-item'><a class='sidebar-link' href='script_reference.html'><b>{&nbsp}</b>&nbsp&nbspScript Reference</a></li>
 	</div>
 	
@@ -48,36 +48,39 @@
 
 	<div class='adjustable-container'>
 		<div class='container-title'>
-			<span class='title-text'>Tutorials</span>
-			<a href='request_tutorial.html' class='btn btn-request right'>Request Tutorial</a>
+			<span class='title-text'>Contact</span>
 		</div>
 		<div class='container-title'>
-			<h6 class='list-group-item-header'>Difficulty Levels</h6><br>
-			<table style='border-collapse:separate; border-spacing: 5px;'>
-				<tr>
-					<td><span class='difficulty-warning beginner left'>Beginner</span></td>
-					<td><span class='list-group-item-text'>These tutorials are for all skill levels. There are no requirements to be able to do these tutorials.</span></td>
-				</tr>
-				<tr>
-					<td><span class='difficulty-warning intermediate left'>Intermediate</span></td>
-					<td><span class='list-group-item-text'>These tutorials are for modders who know the basics. Some previous mapping, scripting and modding knowledge may be required.</span></td>
-				</tr>
-				<tr>
-					<td><span class='difficulty-warning advanced left'>Advanced</span></td>
-					<td><span class='list-group-item-text'>These tutorials recommend that you know a good amount of modding, mapping and scripting.</span></td>
-				</tr>
-				<tr>
-					<td><span class='difficulty-warning expert left'>Expert</span></td>
-					<td><span class='list-group-item-text'>These tutorials are not to be taken lightly. If you don't understand the content, this tutorial is too much for you.</span></td>
-				</tr>
-			</table>
+			<p class='list-group-item-text'>Have a question? Found a bug? Just want to say hi?</p>
+			<p class='list-group-item-text'>Send me a message down below and I will try to get back to you.</p>
 		</div>
 		<div class='container-line'>
-			<div class="list-group tutorial-listing" id='newest'></div>
-			<div class="list-group tutorial-listing" id='zombie'></div>
-			<div class="list-group tutorial-listing" id='mapping'></div>
-			<div class="list-group tutorial-listing" id='modding'></div>
-			<div class="list-group tutorial-listing" id='scripting'></div>
+			<form action="https://formspree.io/jbird632@hotmail.ca" method="POST">
+				<div class="form-group required">
+					<p class='list-group-item-text'>Name</p>
+					<input type="text" class="form-control" placeholder="Enter name" name='name' required="required">
+					<p id="emailHelp" class="form-text text-muted">Can be an alias or username that you go by.</p>
+				</div>
+				<div class="form-group required">
+					<p class='list-group-item-text'>Email address</p>
+					<input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email" name='email' required="required">
+					<p id="emailHelp" class="form-text text-muted">Leave your email so I can get back to you.</p>
+				</div>
+				<div class="form-group required">
+					<select class="custom-select" name='contact-type' required="required">
+						<option selected>Message Type</option>
+						<option value="mapping">Question</option>
+						<option value="zombie">Bug</option>
+						<option value="modding">General</option>
+						<option value="scripting">Other</option>
+					</select>
+				</div>
+				<div class="form-group required">
+					<p class='list-group-item-text'>Message</p>
+					<textarea class="form-control" rows="10" placeholder='Enter message' name='contact-message' required="required" style='resize: none;'></textarea>
+				</div>
+				<button type="submit" class="btn btn-request btn-primary">Submit</button>
+			</form>
 		</div>
 	</div>
 	

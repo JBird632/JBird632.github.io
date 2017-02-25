@@ -1,0 +1,40 @@
+{
+	"verruckt_remastered":
+	{
+		"Title": "Verrückt Remastered",
+		"Mappers": ["Bahngo"],
+		"MapperLinks": ["https://www.youtube.com/bahngo"],
+		"Scripters": [],
+		"ScripterLinks": [],
+		"Credits": ["Chops", "MakeCents", "JBird632", "NateSmithZombies", "Koan", "DidUknowiPwn"],
+		"CreditsHelp": ["Music and sound design", "Lil Arnie fix", "Music Easter Egg script", "Anti-Cheat code", "Anti-Cheat code", "Anti-Cheat code"],
+		"Description": "Verrückt Remastered is a remastering of the original Verrückt that appeared back on Call of Duty: World at War.",
+		"Video": "https://youtu.be/3U5irg7Pv_Q.com",
+		"Download": "",
+		"LevelOfDetail": 8,
+		"CustomContent": 3,
+		"Polish": 7,
+		"Fun": 6,
+		"Replayability": 3,
+		"Total": 27
+	},
+	"fabrik_der_untoten":
+	{
+		"Title": "Fabrik Der Untoten",
+		"Mappers": ["Madgaz Gaming"],
+		"MapperLinks": ["https://www.youtube.com/user/MadgazGaming"],
+		"Scripters": ["NateSmithZombies"],
+		"ScripterLinks": [],
+		"Credits": ["Zeroy", "JBird632", "Porter", "RDV"],
+		"CreditsHelp": ["Ported magnum", "Custom claymores", "Widows Wine and Electric Cherry", "Widows Wine and Electric Cherry"],
+		"Description": "Fabrik Der Untoten is an abandoned facility that Group 935 have taken over and used as a reseach facility.",
+		"Video": "https://youtu.be/eeV5h7QDnDA.com",
+		"Download": "",
+		"LevelOfDetail": 6,
+		"CustomContent": 9,
+		"Polish": 7,
+		"Fun": 7,
+		"Replayability": 9,
+		"Total": 38
+	}
+}

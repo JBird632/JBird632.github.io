@@ -1,346 +1,489 @@
-html, body {
-		font-family: "Arial";
-		font-style: normal;
-		background-color: rgb(100,100,100);
-		background-image: url("/images/tile_bg.png");
+html
+{
+	font-family: "Arial";
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(50, 54, 61);
+	position: relative;
+	min-height: 100%;
 }
 
-ul {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(80,80,80);
-		border-radius: 5px;
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #333;
+.body
+{
+	font-family: "Arial";
+	font-style: normal;
+	padding: 0;
+	margin: 0;
+	background-color: rgb(50, 54, 61);
+	margin-bottom: 90px;
 }
 
-li {
-		float: left;
+header
+{
+	background-color: #191919;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 35px;
+	box-shadow: 0px 0px 10px #515151;
+	z-index: 10;
 }
 
-li a {
-		display: block;
-		color: white;
-		text-align: center;
-		padding: 14px 16px;
-		text-decoration: none;
+footer
+{
+	color: white;
+	background-color: #191919;
+	width: 100%;
+	padding: 20px;
+    clear: both;
+    position: relative;
+    z-index: 10;
+	text-align: center
 }
 
-li a:hover:not(.active) {
-		background-color: rgb(80,80,80);
+.footer-base
+{
+	height: 30px;
+	margin-bottom: 0px;
+	position: absolute;
+	bottom: 0;
 }
 
-li a:hover(.active), .dropdown:hover:not(.active) .dropbtn{
-		background-color: rgb(150,30,30);
+.footer-top
+{
+	height: 60px;
+	margin-bottom: 0px;
+	background-color: SteelBlue;
+	box-shadow: 0px 0px 10px #515151;
+	position: absolute;
+	bottom: 40px;
 }
 
-li.dropdown {
-		display: inline:block;
+section
+{
+	float: left;
+	width: 80%;
 }
 
-input {
-		float: right;
-	    width: 250px;
-	    height: 25px;
-	    box-sizing: border-box;
-	    border: 2px solid #ccc;
-	    border-color: rgb(150,150,150);
-	    border-radius: 4px;
-	    font-size: 16px;
-	    margin: 10px 0px 10px 80px;
+aside
+{
+	float: right;
+	width: 20%;
 }
 
-.hover-item {
-		cursor: pointer;
+/* 	-------------------------------------------------------------------------------------------
+	Boot Strap
+*/
+
+.container
+{
+	background-color: rgb(40, 45, 50);
+	box-shadow: 0px 0px 10px #515151;
+	margin: 20px;
 }
 
-.imgIcon {
-		float: right;
-		width: 35px;
-		border-radius: 50%;
-		display: block;
-		padding: 6px 6px;
-		text-decoration: none;
+.container-title
+{
+	border-bottom-style: solid;
+	border-bottom-width: 2px;
+	border-bottom-color: rgb(50, 54, 61);
+	padding: 20px;
 }
 
-.planetIcon {
-		float: left;
-		width: 100px;
-		border-radius: 50%;
-		display: block;
-		padding: 6px 6px;
-		text-decoration: none;
+.container-line
+{
+	padding: 20px;
 }
 
-.imgBanner {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(80,80,80);
-		border-radius: 5px;
-		list-style-type: none;
-		margin: 10px 0px 10px 0px;
-		padding: 0;
-		overflow: hidden;
-		width: 99.5%;
-		background-color: #333;
+.title-text
+{
+	color: lightgrey;
+	text-align: left;
+	font-size: 24px;
 }
 
-.bodyFormat {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(30,30,30);
-		list-style-type: none;
-		margin: 0px 30px 10px 30px;
-		padding: 0;
-		overflow: hidden;
-		background-color: rgb(80,80,80);
-		box-shadow: 0px 0px 20px black;
+.content-text
+{
+	color: SteelBlue;
+	text-align: left;
+	font-size: 16px;
 }
 
-.funcFormat {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(30,30,30);
-		list-style-type: none;
-		margin: 10px 5% 10px 5%;
-		padding: 0;
-		overflow: hidden;
-		background-color: rgb(80,80,80);
-		box-shadow: 0px 0px 20px black;
-		width: 90%;		
+.body-text
+{
+	color: lightgrey;
+	text-align: left;
+	font-size: 12px;
 }
 
-.bodyFormat-inset {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(100,100,100);
-		list-style-type: none;
-		margin: 0px 30px 10px 30px;
-		padding: 0;
-		overflow: hidden;
-		background-color: rgb(80,80,80);
-		box-shadow: 0px 0px 5px black;
+.center
+{
+	text-align: center;
 }
 
-.bodyTitle {
-		list-style-type: none;
-		margin: 10px;
-		padding: 0;
-		overflow: hidden;
-		color: rgb(200,200,200);
-		text-shadow: 0px 0px 8px black;
+#navbar-fixed-left
+{
+	width: 160px;
+	position: fixed;
+	border-radius: 0;
+	text-align: center;
+	height: 100%;
+	margin: 80px 5% 80px 5%;
 }
 
-.bodyText {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(200,200,200);
-		border-radius: 5px;
-		list-style-type: none;
-		margin: 10px;
-		padding: 0;
-		overflow: hidden;
-		background-color: rgb(50,50,50);
-		color: white;
+.nav-left-bar
+{
+	display: block;
+	color: lightgrey;
 }
 
-.function-title {
-		list-style-type: none;
-		margin: 2px;
-		padding: 4px;
-		overflow: hidden;
-		color: rgb(200,200,200);
-		text-shadow: 0px 0px 8px black;
-		background-color: rgb(40,40,40);
-		width: 100%;
+.nav-tabs
+{
+	border-width: 0px;
+	border-bottom-width: 0px;
 }
 
-.function-text {
-		font-family: "Arial";
-		font-style: normal;
-		font-size: 16px;
-		text-shadow: 0px 0px 4px black;
-		color: rgb(200,200,200);
-		margin: 20px;
+#web-tabs
+{
+	border-width: 0px;
 }
 
-.fill-text {
-		font-family: "Arial";
-		font-style: normal;
-		font-size: 16px;
-		text-shadow: 0px 0px 4px black;
-		color: rgb(200,200,200);
-		margin: 20px;
-		overflow: hidden;
+.active
+{
+	background-color: SteelBlue;
+	color: lightgrey;
+	padding: 10px 35px 10px 35px;
+	box-shadow: 0px 0px 10px #515151;
 }
 
-.ref-block {
-		border-style: solid;
-		border-width: 2px;
-		border-color: rgb(120,120,120);
-		border-radius: 5px;
-		list-style-type: none;
-		margin: 10px;
-		padding: 0;
-		overflow: hidden;
-		background-color: rgb(50,50,50);
-		color: white;
-		display: inherit;
+.side-tabs
+{
+	font-weight: bold;
+	font-size: 16px;
 }
 
-.dropdown-content {
-		border-style: solid;
-		border-width: 3px;
-		border-color: rgb(80,80,80);
-		display: none;
-		position: absolute;
-		background-color: #333;
-		min-width: 160px;
-		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+@media only screen and (max-width: 1626px) {
+    #navbar-fixed-left {
+        display: none;
+    }
 }
 
-.dropdown-content a {
-		color: white;
-		padding: 12px 16px;
-		text-decoration: none;
-		display: block;
-		text-align: left;
+.well
+{
+	margin: 2px;
 }
 
-.dropdown-content a:hover {
-		background-color: rgb(80,80,80);
+#code-box
+{
+	padding: 10px;
+	background-color: rgb(58, 66, 71);
+	border-width: 2px;
+	border-radius: 2px;
+	border-color: rgb(48, 53, 56);
 }
 
-.dropdown:hover .dropdown-content {
-		display: block;
+.divider
+{
+	border-top-style: solid;
+	border-top-color: grey;
+	border-top-width: 2px;
+	color: grey;
+	padding: 0px 35px 0px 35px;
 }
 
-.active {
-		background-color: rgb(100,30,30);
+/* 	-------------------------------------------------------------------------------------------
+	Header Bar
+*/
+
+.menu-expand
+{
+	margin-left: 10px;
+	z-index: 10;
 }
 
-.code-select {
-		margin: 10px 0px 0px 20px;
-		color: rgb(200,200,200);
+.header-blocker
+{
+	top: 0;
+	width: 100%;
+	height: 10px;
 }
 
-.link {
-		color: white;
-		background: none;
-		border: none;
-		cursor:pointer;
+.header-bar
+{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
 }
 
-.function-block {
-		border-style: solid;
-		border-width: 2px;
-		border-color: rgb(40,40,40);
-		list-style-type: none;
-		margin: 5px 20px 20px 20px;
-		padding: 0;
-		overflow: hidden;
-		background-color: #3C4142;
+.logo
+{
+	float: left;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+	width: 100px;
+	height: auto;
 }
 
-.code-block {
-		border-style: solid;
-		border-width: 2px;
-		border-color: rgb(40,40,40);
-		list-style-type: none;
-		margin: 5px 20px 20px 20px;
-		padding: 0;
-		overflow: hidden;
-		background-color: #3A3F39;
+/* 	-------------------------------------------------------------------------------------------
+	Drop Down
+*/
+
+.dropdown
+{
+	display: inline-block;
 }
 
-.code-line {
-		display: inline-block;
-		margin: 5px;
-		color: rgb(200,200,200);
-		height: auto;
-	    max-height: 200px;
-	    width: 99%;
-	    overflow: auto;
-	    word-break: normal !important;
-	    word-wrap: normal !important;
-	    white-space: pre !important;
+.dropdown:hover .dropdown-content
+{
+    display: block;
 }
 
-.side-bar-ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		width: 25%;
-		background-color: #f1f1f1;
-		position: fixed;
-		height: 100%;
-		overflow: auto;
+.dropdown-content
+{
+	background-color: lightgrey;
+	padding: 10px;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 0px 10px #515151;
 }
 
-.side-bar-li {
-		display: block;
-	    color: #000;
-	    padding: 8px 16px;
-	    text-decoration: none;
-	    float: none;
+.dropdown-link
+{
+	color: black;
+	text-align: left;
+	padding: 5px;
+	margin: 10px;
+	font-weight: bold;
+	text-decoration: none;
+	border-style: solid;
+	border-color: lightgrey;
+	border-width: 2px;
+	border-radius: 10px;
 }
 
-.hide-block {
-		margin: 0px;
-
+.dropdown-link:hover
+{
+	border-color: darkgrey;
+	background-color: darkgrey;
 }
 
-.alert {
-		padding: 20px;
-		background-color: rgb(30,30,30);
-		color: white;
-		margin-bottom: 15px;
-		position: fixed;
-		z-index: 1;
-   		bottom: 0;
-   		left: -100%;
-   		-webkit-animation: slide 0.5s forwards;
-	    -webkit-animation-delay: 1s;
-	    animation: slide 0.5s forwards;
-	    animation-delay: 1s;
+.imgBanner
+{
+	list-style-type: none;
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+	overflow: hidden;
+	width: 100%;
 }
 
-.alert-hidden {
-		padding: 20px;
-		background-color: rgb(30,30,30);
-		color: white;
-		margin-bottom: 15px;
-		position: fixed;
-		z-index: 1;
-   		bottom: 0;
-   		left: -100%;
+/* 	-------------------------------------------------------------------------------------------
+	Aside
+*/
+
+.item-container
+{
+	margin: 10px;
+	padding: 10px;
+	box-shadow: 0px 0px 10px #515151;
+	background-color: white;
 }
 
-.alertClose {
-		padding: 20px;
-		background-color: rgb(30,30,30);
-		color: white;
-		margin-bottom: 15px;
-		position: fixed;
-		z-index: 1;
-   		bottom: 0;
-   		left: 0;
-   		-webkit-animation: slideBack 0.5s forwards;
-	    animation: slideBack 0.5s forwards;
+.spacing-medium
+{
+	margin: 0px;
+	padding: 20px;
 }
 
-.closebtn {
-		margin-left: 15px;
-		color: white;
-		font-weight: bold;
-		float: right;
-		font-size: 22px;
-		line-height: 20px;
-		cursor: pointer;
-		transition: 0.3s;
+.spacing-small
+{
+	margin: 5px 10px 5px 10px;
+	padding: 5px 10px 5px 10px;
+}
+
+.content-title
+{
+	font-size: 16px;
+	font-weight: bold;
+	margin:5px;
+}
+
+.content-text
+{
+	font-size: 11px;
+	margin:5px;
+}
+
+.youtube-button
+{
+	color: #a02e2e;
+	margin: 5px;
+}
+
+.youtube-button:hover
+{
+	color: red;
+}
+
+.twitter-button
+{
+	color: #4384a8;
+	margin: 5px;
+}
+
+.twitter-button:hover
+{
+	color: #399fd6;
+}
+
+/* 	-------------------------------------------------------------------------------------------
+	General
+*/
+
+.hover-item
+{
+	cursor: pointer;
+}
+
+.link
+{
+	cursor: pointer;
+	color: white;
+}
+
+.funcFormat
+{
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(30,30,30);
+	list-style-type: none;
+	margin: 10px 5% 10px 5%;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(80,80,80);
+	box-shadow: 0px 0px 20px black;
+	width: 90%;	
+}
+
+.ref-block
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: rgb(120,120,120);
+	border-radius: 5px;
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(50,50,50);
+	color: white;
+	display: inherit;
+	width: 98.5%;
+}
+
+.bodyTitle
+{
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;
+	overflow: hidden;
+	color: rgb(200,200,200);
+	text-shadow: 0px 0px 8px black;
+}
+
+.bodyFormat-inset
+{
+	border-style: solid;
+	border-width: 3px;
+	border-color: rgb(100,100,100);
+	list-style-type: none;
+	margin: 0px 30px 10px 30px;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(80,80,80);
+	box-shadow: 0px 0px 5px black;
+}
+
+.function-title
+{
+	list-style-type: none;
+	margin: 2px;
+	padding: 4px;
+	overflow: hidden;
+	color: rgb(200,200,200);
+	text-shadow: 0px 0px 8px black;
+	background-color: rgb(40,40,40);
+	width: 100%;
+}
+
+.function-text
+{
+	font-family: "Arial";
+	font-style: normal;
+	font-size: 16px;
+	text-shadow: 0px 0px 4px black;
+	color: rgb(200,200,200);
+	margin: 20px;
+}
+
+.alert
+{
+	padding: 20px;
+	background-color: rgb(30,30,30);
+	color: white;
+	margin-bottom: 15px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: -100%;
+	-webkit-animation: slide 0.5s forwards;
+	-webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 1s;
+}
+
+.alert-hidden
+{
+	padding: 20px;
+	background-color: rgb(30,30,30);
+	color: white;
+	margin-bottom: 15px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: -100%;
+}
+
+.alertClose 
+{
+	padding: 20px;
+	background-color: rgb(30,30,30);
+	color: white;
+	margin-bottom: 15px;
+	position: fixed;
+	z-index: 1;
+	bottom: 0;
+	left: 0;
+	-webkit-animation: slideBack 0.5s forwards;
+	animation: slideBack 0.5s forwards;
+}
+
+.closebtn 
+{
+	margin-left: 15px;
+	color: white;
+	font-weight: bold;
+	float: right;
+	font-size: 22px;
+	line-height: 20px;
+	cursor: pointer;
+	transition: 0.3s;
 }
 
 .closebtn:hover {
@@ -363,95 +506,135 @@ input {
     100% { left: -100%; }
 }
 
-.image-model {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+.footer-note
+{
+	color: lightgrey;
+	margin: 10px;
+}
+
+/* 	-------------------------------------------------------------------------------------------
+	Model
+*/
+
+.modal
+{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content
+{
+	border-radius: 10px;
+	border-style: solid;
+	border-width: 0px;
+	background-color: #fefefe;
+	margin: 15% auto;
+	width: 50%;
+	box-shadow: 0px 0px 10px #515151;
+}
+
+.model-title
+{
+	background-color: #191919;
+	border-top-right-radius: 9px;
+	border-top-left-radius: 9px;
+	color: white;
+}
+
+#close
+{
+	color: lightgrey;
+	float: right;
+	margin-right: 5%;
+	margin-top: 100px;
+	font-size: 28px;
+	font-weight: bold;
+}
+
+#close:hover,
+#close:focus
+{
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.form-group.required .control-label:before
+{
+	color: red;
+	position: absolute;
+	margin-left: -13px;
+	margin-top: 9px;
+	font-weight: normal;
+	font-size: 18px;
+	content: "*";
+}
+
+#td-override
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.space-left
+{
+	margin-left: 5px;
+}
+
+.space-up
+{
+	margin-top: 10px;
+}
+
+.image-model
+{
+	display: none;
+    position: fixed;
+    z-index: 11;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
 }
 
-.image-model-picture {
+.modal-content
+{
     margin: auto;
     display: block;
-    width: 65%;
+    width: 100%;
 }
 
-#caption {
-    margin: auto;
+.clickable-image
+{
+	display: block;
+	width: 100%;
+	border-style: solid;
+	border-color: rgba(0,0,0,0);
+	border-width: 1px;
+}
+
+.clickable-image:hover
+{
+	border-color: lightgrey;
+	box-shadow: 0px 0px 10px #515151;
+	cursor: pointer;
+}
+
+.model-display-image
+{
+	margin: auto;
+	margin-top: 150px;
     display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-.image-model-picture, #caption { 
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-}
-
-@keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-}
-
-.model-close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.model-close:hover,
-.model-close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-.clickable-image {
-		cursor: pointer;
-    	transition: 0.3s;
-		border-style: solid;
-		border-width: 0.15%;
-		border-color: rgb(100,100,100);
-		list-style-type: none;
-		padding: 0;
-		overflow: hidden;
-		padding: 0.15%;
-		background-color: rgb(80,80,80);
-		box-shadow: 0px 0px 5px black;
-		width: 19%;
-		height: auto;
-		margin: 0.15%;
-}
-
-.clickable-image:hover {
-		border-color: rgb(150,30,30);
-		opacity: 0.7;
+    width: 70%;
 }
