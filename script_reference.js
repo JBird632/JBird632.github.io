@@ -2,10 +2,9 @@ var activeID = "ref-all";
 var jsonObj = null;
 var oldDisplay = null;
 
-$.getJSON("bo3_reference.json", function(json) {
+$.getJSON("json/bo3_reference.json", function(json) 
+{
     jsonObj = json;
-    var sections = document.getElementsByClassName('ref-block');
-    oldDisplay = sections[0].display;
 
     addFunctionsBySection(json, "ai");
     addFunctionsBySection(json, "animation");
