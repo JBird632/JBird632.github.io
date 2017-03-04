@@ -258,26 +258,46 @@ function setupTutorialTemplate(tutorialLinks)
 	
 	if(tutorial.videos.length > 0)
 	{
-		var contentDiv = document.createElement('div');
-		contentDiv.className = 'container-title';
-		var contentTab = document.createElement('span');
-		contentTab.className = 'list-group-side left';
-		contentTab.innerHTML = 'Tutorial';
-		contentDiv.appendChild(contentTab);
+		var tutorialDiv = document.createElement('div');
+		tutorialDiv.className = 'container-title';
+		var tutorialTab = document.createElement('span');
+		tutorialTab.className = 'list-group-side left';
+		tutorialTab.innerHTML = 'Tutorial';
+		tutorialDiv.appendChild(tutorialTab);
 			
 		for(var i = 0; i < tutorial.videos.length; i++ )
 		{					
 			var videoDiv = document.createElement('div');
 			videoDiv.className = 'video-container';
-			contentDiv.appendChild(videoDiv);
+			tutorialDiv.appendChild(videoDiv);
 			var video = document.createElement('iframe');
 			video.className = 'tutorial-video';
 			video.src = tutorial.videos[i];	
 			videoDiv.appendChild(video);
-			container.appendChild(contentDiv);		
+			container.appendChild(tutorialDiv);		
 		}
 	}
-	
+
+	if(tutorial.content)
+	{
+		var contentDiv = document.createElement('div');
+		contentDiv.className = 'container-title';
+		var contentTab = document.createElement('span');
+		contentTab.className = 'list-group-side left';
+		contentTab.innerHTML = 'Code';
+		contentDiv.appendChild(contentTab);
+			
+		var fileName = tutorial.title.toLowerCase().replace(/ /g,"_");
+		var codeBox = document.createElement('div');
+		codeBox.className = 'code-box';
+		codeBox.id = fileName;
+
+		createCodeBox(codeBox);
+
+		contentDiv.appendChild(codeBox);
+		container.appendChild(contentDiv);
+	}
+
 	resizedEvent();
 }
 
@@ -315,6 +335,6 @@ function resizedEvent()
 	
 	for( var i = 0; i < length; i++ )
 	{
-		tabs[i].style.height = tabs[i].parentNode.offsetHeight + 'px';
+		tabs[i].style.height = tabs[i].parentNode.offsetHeight - 1 + 'px';
 	}
 }

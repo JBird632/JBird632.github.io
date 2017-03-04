@@ -1,0 +1,4 @@
+level.default_laststandpistol 		= GetWeapon( "pistol_standard" );
+level.default_solo_laststandpistol	= GetWeapon( "pistol_standard_upgraded" );
+level.laststandpistol			= level.default_laststandpistol;
+level.start_weapon			= level.default_laststandpistol;

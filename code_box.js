@@ -50,6 +50,9 @@ function fillCodeBox(codeBox)
 	};
 	
 	topText.appendChild(select);
+
+	setupGscSyntax();
+	resizedEvent();
 }
 
 function selectCode(codeBox)

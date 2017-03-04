@@ -10,7 +10,7 @@
 			"href": "tutorials/launcher_introduction.html",
 			"videos": ["https://www.youtube.com/embed/tj7guP_ZeUI"],
 			"descriptionMain": "",
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -21,7 +21,7 @@
 			"date": "09 / 23 / 16",
 			"href": "tutorials/radiant_introduction.html",
 			"videos": ["https://www.youtube.com/embed/VY_WfL_1Ras"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -32,7 +32,7 @@
 			"date": "09 / 23 / 16",
 			"href": "tutorials/prefabs.html",
 			"videos":["https://www.youtube.com/embed/0hWaVQ8x3p4"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -43,7 +43,7 @@
 			"date": "09 / 24 / 16",
 			"href": "tutorials/patch_detailing.html",
 			"videos": ["https://www.youtube.com/embed/kp84nhBTgqs"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -54,7 +54,7 @@
 			"date": "09 / 26 / 16",
 			"href": "tutorials/pose_manipulator.html",
 			"videos": ["https://www.youtube.com/embed/_PbnBDMw2Iw"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -65,7 +65,7 @@
 			"date": "09 / 28 / 16",
 			"href": "tutorials/volume_decals.html",
 			"videos": ["https://www.youtube.com/embed/07yIwwkwUQ0"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -76,7 +76,7 @@
 			"date": "09 / 29 / 16",
 			"href": "tutorials/add_effects.html",
 			"videos": ["https://www.youtube.com/embed/T7079vvVtvI", "https://www.youtube.com/embed/vSTKYz3jVAo"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -87,7 +87,7 @@
 			"date": "10 / 21 / 16",
 			"href": "tutorials/brush_editing.html",
 			"videos": ["https://www.youtube.com/embed/himkTVpKRo8"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -98,7 +98,7 @@
 			"date": "10 / 22 / 16",
 			"href": "tutorials/gameplay_standards.html",
 			"videos": ["https://www.youtube.com/embed/VnwFgB28LrA"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -109,7 +109,7 @@
 			"date": "11 / 10 / 16",
 			"href": "tutorials/ssi_and_lighting.html",
 			"videos": ["https://www.youtube.com/embed/jAmmmDvZp_A"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -120,7 +120,7 @@
 			"date": "12 / 30 / 16",
 			"href": "tutorials/mapping_references.html",
 			"videos": ["https://www.youtube.com/embed/lICcknQGOxc"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -131,7 +131,7 @@
 			"date": "12 / 31 / 16",
 			"href": "tutorials/grid_sizes.html",
 			"videos": ["https://www.youtube.com/embed/wxsJ1dObhvA"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -142,7 +142,7 @@
 			"date": "01 / 05 / 17",
 			"href": "tutorials/avoiding_model_spam.html",
 			"videos": ["https://www.youtube.com/embed/Q0ItMnlyFrc"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		}
 	],
@@ -156,7 +156,7 @@
 			"date": "09 / 30 / 16",
 			"href": "tutorials/remove_dogs.html",
 			"videos": ["https://www.youtube.com/embed/mnexZpyuA1E"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -167,7 +167,7 @@
 			"date": "09 / 30 / 16",
 			"href": "tutorials/doors_and_debris.html",
 			"videos": ["https://www.youtube.com/embed/FZaaw01xvmA", "https://www.youtube.com/embed/RJGLeTIQRvo"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -178,7 +178,7 @@
 			"date": "10 / 01 / 16",
 			"href": "tutorials/zones_and_spawners.html",
 			"videos": ["https://www.youtube.com/embed/Ht1bu0zBqWA"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -189,7 +189,7 @@
 			"date": "10 / 17 / 16",
 			"href": "tutorials/download_traversals.html",
 			"videos": ["https://www.youtube.com/embed/XjbI1qaweYc"],
-			"content": "",
+			"content": false,
 			"downloads": [
 				{
 					"name": "Traversal Prefabs",
@@ -207,7 +207,7 @@
 			"date": "11 / 02 / 16",
 			"href": "tutorials/music_easter_egg.html",
 			"videos": ["https://www.youtube.com/embed/P82oPI3KeG0"],
-			"content": "",
+			"content": false,
 			"downloads": [
 				{
 					"name": "Music Easter Egg Files",
@@ -219,13 +219,13 @@
 		},
 		{
 			"title": "Custom Weapons in Mystery Box",
-			"new": true,
+			"new": false,
 			"difficulty": "Intermediate",
 			"description": "Select which weapons you want in the box as well as putting your custom ones in.",
 			"date": "01 / 21 / 17",
 			"href": "tutorials/custom_weapons_in_mystery_box.html",
 			"videos": ["https://www.youtube.com/embed/n8DSrZmlOR0"],
-			"content": "",
+			"content": true,
 			"downloads": [
 				{
 					"name": "_zm_clientBox.csc",
@@ -237,13 +237,24 @@
 		},
 		{
 			"title": "Custom Wall Weapons and Chalk Drawings",
-			"new": true,
+			"new": false,
 			"difficulty": "Intermediate",
 			"description": "Make your custom weapons wall buys as well as design the calk drawing.",
 			"date": "01 / 28 / 17",
 			"href": "tutorials/custom_wall_weapons.html",
 			"videos": ["https://www.youtube.com/embed/wqiAZmDwk5A"],
-			"content": "",
+			"content": false,
+			"downloads": []
+		},
+		{
+			"title": "Starting Pistol and Laststand Weapons",
+			"new": true,
+			"difficulty": "Beginner",
+			"description": "Choose what your starting weapon as well as the weapons you use in laststand.",
+			"date": "03 / 01 / 17",
+			"href": "tutorials/starting_and_laststand_weapons.html",
+			"videos": ["https://www.youtube.com/embed/wqiAZmDwk5A"],
+			"content": true,
 			"downloads": []
 		}
 	],
@@ -257,7 +268,7 @@
 			"date": "09 / 03 / 16",
 			"href": "tutorials/converting_ai_animations.html",
 			"videos": ["https://www.youtube.com/embed/2GINQQ5EQkE"],
-			"content": "",
+			"content": false,
 			"downloads": [
 				{
 					"name": "AI Conversion",
@@ -275,7 +286,7 @@
 			"date": "10 / 01 / 16",
 			"href": "tutorials/extra_assets.html",
 			"videos": ["https://www.youtube.com/embed/DFUdkOahEW8"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -286,7 +297,7 @@
 			"date": "10 / 03 / 16",
 			"href": "tutorials/export2bin_setup.html",
 			"videos": ["https://www.youtube.com/embed/4CpP0_d1KJs"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -297,7 +308,7 @@
 			"date": "10 / 05 / 16",
 			"href": "tutorials/claymore_download.html",
 			"videos": ["https://www.youtube.com/embed/iYP_CdMhwG4"],
-			"content": "",
+			"content": false,
 			"downloads": [
 				{
 					"name": "JBirds Claymores",
@@ -315,7 +326,7 @@
 			"date": "10 / 07 / 16",
 			"href": "tutorials/ape_introduction.html",
 			"videos": ["https://www.youtube.com/embed/Nti1C1RLZb8"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -326,7 +337,7 @@
 			"date": "10 / 09 / 16",
 			"href": "tutorials/porting_materials.html",
 			"videos": ["https://www.youtube.com/embed/hNKz2PqPAF4"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -337,7 +348,7 @@
 			"date": "10 / 12 / 16",
 			"href": "tutorials/porting_models.html",
 			"videos": ["https://www.youtube.com/embed/r6LNrSaLH8g"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -348,7 +359,7 @@
 			"date": "10 / 12 / 16",
 			"href": "tutorials/porting_weapons.html",
 			"videos": ["https://www.youtube.com/embed/CHNfDfTb_gA", "https://www.youtube.com/embed/GzVSX-7scVY", "https://www.youtube.com/embed/smcofe6UleI"],
-			"content": "",
+			"content": false,
 			"downloads": [
 				{
 					"name": "Conversion Kit",
@@ -381,7 +392,7 @@
 			"date": "10 / 05 / 16",
 			"href": "tutorials/sublime_setup.html",
 			"videos": ["https://www.youtube.com/embed/vFr9DFstF9w"],
-			"content": "",
+			"content": false,
 			"downloads": [
 				{
 					"name": "Sublime",
@@ -399,7 +410,7 @@
 			"date": "08 / 16 / 16",
 			"href": "tutorials/purchase_loop.html",
 			"videos": ["https://www.youtube.com/embed/bvnmGmhldag"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		},
 		{
@@ -410,7 +421,7 @@
 			"date": "08 / 17 / 16",
 			"href": "tutorials/custom_traps.html",
 			"videos": ["https://www.youtube.com/embed/6mpDgXTlmvM"],
-			"content": "",
+			"content": false,
 			"downloads": []
 		}
 	]

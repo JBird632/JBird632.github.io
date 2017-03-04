@@ -1,23 +1,26 @@
-$.getJSON("bo3_reference.json", function(json)
+function setupGscSyntax()
 {
-	var functions = [];
+	$.getJSON("../../json/bo3_reference.json", function(json)
+	{
+		var functions = [];
 
-	for( var data in json)
-    {
-    	var str = json[data].Function;
+		for( var data in json)
+	    {
+	    	var str = json[data].Function;
 
-    	if(str.indexOf("<") == 0)
-    	{
-    		var idx = str.indexOf(">");
-    		var rep = str.substring(0,idx+2);
-    		str = str.replace(rep, "");
-    	}
+	    	if(str.indexOf("<") == 0)
+	    	{
+	    		var idx = str.indexOf(">");
+	    		var rep = str.substring(0,idx+2);
+	    		str = str.replace(rep, "");
+	    	}
 
-    	functions.push(str);
-    }
+	    	functions.push(str);
+	    }
 
-    setSyntaxColour(functions)
-});
+	    setSyntaxColour(functions)
+	});
+}
 
 function setSyntaxColour(functions)
 {
