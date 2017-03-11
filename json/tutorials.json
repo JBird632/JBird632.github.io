@@ -144,6 +144,17 @@
 			"videos": ["https://www.youtube.com/embed/Q0ItMnlyFrc"],
 			"content": false,
 			"downloads": []
+		},
+		{
+			"title": "Effects Editor Introduction",
+			"new": true,
+			"difficulty": "Intermediate",
+			"description": "Creating effects can be quite completex, this tutorial will show you the basics of the effects editor.",
+			"date": "03 / 11 / 17",
+			"href": "tutorials/effects_editor_introduction.html",
+			"videos": ["https://www.youtube.com/embed/PBu6J1F9DrQ"],
+			"content": false,
+			"downloads": []
 		}
 	],
 	"zombie":
@@ -248,7 +259,7 @@
 		},
 		{
 			"title": "Starting Pistol and Laststand Weapons",
-			"new": true,
+			"new": false,
 			"difficulty": "Beginner",
 			"description": "Choose what your starting weapon as well as the weapons you use in laststand.",
 			"date": "03 / 04 / 17",
