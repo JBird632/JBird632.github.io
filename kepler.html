@@ -1,178 +1,331 @@
-<!DOCTYPE html style="background-image: url('/images/kepler_station_bg.jpg')">
+<!DOCTYPE html>
 <html>
 <head>
-		<title>JBird | Kepler</title>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="shortcut icon" type="image/x-icon" href="images/jbird_icon.ico" />
-		<link rel="stylesheet" href="setup.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="/libraries/jquery-3.1.1.min.js"></script>
+	<title>JBird | Kepler</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="images/jbird_icon.ico" />
+	<link rel="stylesheet" href="bootstrap_tab_panels.css">
+	<link rel="stylesheet" href="progress.css">
+	<link rel="stylesheet" href="sidebar.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="libraries/jquery-3.1.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="tutorials.css">
+	<link rel="stylesheet" href="setup.css">
 </head>
+<body class='body'>
+	<header>
+		<span class='title-text title-slide'>&nbspJBird632</span>
+		<span class='content-text'>Kepler</span>
+		<a href='contact.html' class='sidebar-link right' style='height: 35px; padding: 8px 20px; font-weight: bold;'>Contact</a>
+	</header>
+	
+	<header class='sub-header'>
+		<a class='breadcrumb-text' href='index.html'>Home</a>
+		<span class='breadcrumb-text'> / Kepler</span>
+	</header>
+	
+	<div class='sidebar-slide'>
+		<li class='sidebar-item'><a class='sidebar-link' href='index.html'><i class="fa fa-home" aria-hidden="true"></i>&nbsp&nbspHome</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='downloads.html'><i class="fa fa-arrow-circle-down" aria-hidden="true"></i>&nbsp&nbspDownloads</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='leaderboards.html'><i class="fa fa-table" aria-hidden="true"></i>&nbsp&nbspLeaderboards</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='map_reviews.html'><i class="fa fa-map" aria-hidden="true"></i>&nbsp&nbspMap Reviews</a></li>
+		
+		<li class='sidebar-header'>Projects</li>
+		<li class='sidebar-item-active'><a class='sidebar-link sidebar-link-active sidebar-link-active' href='kepler.html'><i class="fa fa-globe" aria-hidden="true"></i>&nbsp&nbspKepler</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='project_sleep.html'><i class="fa fa-bed" aria-hidden="true"></i>&nbsp&nbspProject Sleep</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='models.html'><i class="fa fa-cube" aria-hidden="true"></i>&nbsp&nbspModels</a></li>
+		
+		<li class='sidebar-header'>Modding</li>
+		<li class='sidebar-item'><a class='sidebar-link' href='tutorials.html'><i class="fa fa-graduation-cap" aria-hidden="true"></i>&nbsp&nbspTutorials</a></li>
+		<li class='sidebar-item'><a class='sidebar-link' href='script_reference.html'><b>{&nbsp}</b>&nbsp&nbspScript Reference</a></li>
+	</div>
+	
+	<div class='sidebar-toggle' onclick='toggleSidebar();'><i class="fa fa-bars fa-4x" aria-hidden="true"></i></div>
 
-<body style="background-image: url('/images/kepler_station_bg.jpg')">
-		<div> <!-- Header Bar -->
-				<ul>
-						<li><a href="\index.html"></i>Home <i class="fa fa-home" style="font-size:12px"></i></a></li>
-						<li><a href="#">Downloads <i class="fa fa-download" style="font-size:12px"></i></a></li>
-						<li><a href="\tutorials.html">Tutorials <i class="fa fa-graduation-cap" style="font-size:12px"></i></a></li>
-						<li><a href="#">Models <i class="fa fa-cube" style="font-size:12px"></i></a></li>
-						
-						<li class="dropdown">
-								<a class="active" href="javascript:void(0)" class="dropbtn">Projects <i class="fa fa-chevron-down" style="font-size:12px"></i></a>
-								<div class="dropdown-content">
-										<a href="\kepler.html">Kepler</a>
-										<a href="#">Project Sleep</a>
-								</div>
-						 </li>
+	<br><br><br>
 
-						 <li><a href="\script_reference.html">Script Reference <i class="fa fa-code" style="font-size:12px"></i></a></li>
-						 
-						 <img class="imgIcon" src="images/jbird_icon.ico" alt="JBird Icon">
-						 <li style="float:right"><a href="#"><b>JBird632</b></a></li>
-				</ul>
+	<div class='adjustable-container'>
+		<div class='container-title'>
+			<span class='title-text'>Kepler</span>
 		</div>
-		<br>
-		<div class="bodyFormat"> <!-- Page Body -->
-				<ul>
-					<li class="hover-item"><a class="active" id="kepler-default" onclick="setActiveTab('kepler-default')">Kepler</a></li>
-					<li class="hover-item"><a id="kepler-planets" onclick="setActiveTab('kepler-planets')">Planets</a></li>
-					<li class="hover-item"><a id="kepler-pictures" onclick="setActiveTab('kepler-pictures')">Pictures</a></li>
-					<li class="hover-item"><a id="kepler-videos" onclick="setActiveTab('kepler-videos')">Videos</a></li>
-				</ul>
+		<div class='container-title'>
+			<h6 class='list-group-item-header'>Information</h6><br>
+			<p class='list-group-item-text'>Kepler is a Custom Zombies Map for Call of Duty: Black Ops 3, which is a huge project being worked on by JBird632 and Awesome Pieman.
+			We are two of the creators of Leviathan and have released many fan favorite maps back on Call of Duty: World at War. </br>
+			Kepler is a futuristic map, taking place in the middle of the search for a new home for the human race. A team of explorers have found that there was no response while approaching
+			their stationed ship. As their dropship returned back to the hanger, what they found was not a warm welcome from the crew they once knew.<p>
 		</div>
+		<div id="tabPanel" class="container-title">	
+			<ul  class="nav nav-pills" data-tabs="tabs">
+				<li class="tab-progress active"><a  onclick='selectTab("progress");' href="#progress" data-toggle="tab">Progress</a></li>
+				<li class='tab-planets'><a onclick='selectTab("planets");' href="#planets" data-toggle="tab">Planets</a></li>
+				<li class='tab-images'><a onclick='selectTab("images");' href="#images" data-toggle="tab">Images</a></li>
+				<li class='tab-videos'><a onclick='selectTab("videos");' href="#videos" data-toggle="tab">Videos</a></li>
+			</ul>
+			<div class="tab-content clearfix">
+					<div class="tab-pane active" id="progress">
+						<h3 style='float:left'>Progress</h3>
+						<p class="label label-default" style='padding: 5px; float: right; margin: 20px 10px;' data-toggle="tooltip" data-placement="auto left" title="Last Updated"><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>04 / 03 / 17</b></p>
+						<br><br>
+						<div class='content-container center'>	
+							<canvas class='progressCircle' id="Mapping-40" width="150" height="150">Browser doesn't support Canvas Tag.</canvas>
+							<canvas class='progressCircle' id="Scripting-20" width="150" height="150">Browser doesn't support Canvas Tag.</canvas>
+							<canvas class='progressCircle' id="Easter Egg-5" width="150" height="150">Browser doesn't support Canvas Tag.</canvas>
+							<canvas class='progressCircle' id="Weapons-35" width="150" height="150">Browser doesn't support Canvas Tag.</canvas>
+							<p class='list-group-item-text'>Kepler was first started back in the beginning of Decemeber. Progress has been quite steady, though there was a point when I was becoming accustomed to my new job
+						where the mapping portion of Kepler stalled for a bit. I am currently hard at work on finishing up one of the planets and plan to hopefully get a teaser for it out within the next few weeks.</p>
+						</div>
+						<div class='content-container'>
+							<img style='width:100%' src="images/kepler_station_bg.jpg">
+						</div>
+						<div class='content-container'>
+							<p class='list-group-item-text'>Please keep in mind that with such a large project like Kepler, it is nearly impossible for us to give an estimate as to how long it will be until we actually release the map. My general rule for mapping has	always been a minimum of 6 months; however, on our previous project "Leviathan" we spent and entire year and there 4 of us working on that. Thank you all for your patients and support, we look forward to releasing on of the best maps for Black Ops 3 zombies!</p><br>
+							<span class='list-group-item-text'>If you would like to keep up to date with everything Kepler, subscribe to my youtube channel: <a style="color: gold" href="http://www.youtube.com/jbird632">JBird632</a></span>
+						</div>
+					</div>
+					<div class="tab-pane" id="planets">
+						<h3>Planets</h3>
+						<div class='content-container'>
+							<table>
+								<td style='width: 15%'>
+									<p class='list-group-item-header' style='font-size: 24px'>Aion</p>
+									<p class='list-group-item-text' style='color:SteelBlue; font-size: 10px'>Red Desert Planet</p>
+									<p class='list-group-item-text'><span style='color:red'><b>X</b></span> Ozone Layer</p>
+									<p class='list-group-item-text'><span style='color:red'><b>X</b></span> Water</p>
+									<p class='list-group-item-text'><span style='color:red'><b>X</b></span> Neutral Gravity</p>
+								</td>
+								<td style='width: 85%'>
+									<img class="imgBanner" src="images/aion_banner.png">
+								</td>
+							</table>
+							<hr>
+							<p class='list-group-item-text'>Aion is a small but very dense planet, which is difficult to tell if it contains any life forms. The extremely high mass of the planet produces a large gravitational pull, this gives roughly double the amount of force extorted on a person compared to Earth. It is recommend that the proper safety gear is worn, as there is no breathable air and the pressure would do harm to the body.</p>
+						</div>
+						<div class='content-container'>
+							<table>
+								<td style='width: 15%'>
+									<p class='list-group-item-header' style='font-size: 24px'>Khione</p>
+									<p class='list-group-item-text' style='color:SteelBlue; font-size: 10px'>Ice Planet</p>
+									<p class='list-group-item-text'><span style='color:green'><i class="fa fa-check" aria-hidden="true"></i></span> Ozone Layer</p>
+									<p class='list-group-item-text'><span style='color:green'><i class="fa fa-check" aria-hidden="true"></i></span> Water</p>
+									<p class='list-group-item-text'><span style='color:red'><b>X</b></span> Neutral Gravity</p>
+								</td>
+								<td style='width: 85%'>
+									<img class="imgBanner" src="images/khione_banner.png">
+								</td>
+							</table>
+							<hr>
+							<p class='list-group-item-text'>Khione is the largest planet in the solar system containing a hollow core. The surface is covered in a layer of thick ice, though the planet does not contain much mass. This
+							gives the planet approximately two thirds the gravitational force of Earth. Life possibly could be on this planet, especially with the breathable air; however, the cold makes this a difficult planet for the
+							human race to solely live on.</p>
+						</div>
+						<div class='content-container'>
+							<table>
+								<td style='width: 15%'>
+									<p class='list-group-item-header' style='font-size: 24px'><span style='color:red'>Error</span></p>
+									<p class='list-group-item-text' style='color:SteelBlue; font-size: 10px'>Unknown Planet</p>
+									<p class='list-group-item-text'><span style='color:yellow'><b>?</b></span> Ozone Layer</p>
+									<p class='list-group-item-text'><span style='color:yellow'><b>?</b></span> Water</p>
+									<p class='list-group-item-text'><span style='color:yellow'><b>?</b></span> Neutral Gravity</p>
+								</td>
+								<td style='width: 85%'>
+									<img class="imgBanner" src="images/error_banner.png">
+								</td>
+							</table>
+							<hr>
+							<p class='list-group-item-text'>404 Error. The information on this planet cannot be found. It is likely that our satellites have lost communication with base servers and are having issues transmitting the data. Once the servers are back online, information on this planet will be displayed.</p>
+						</div>
+						<div class='content-container'>
+							<table>
+								<td style='width: 15%'>
+									<p class='list-group-item-header' style='font-size: 24px'><span style='color:red'>Error</span></p>
+									<p class='list-group-item-text' style='color:SteelBlue; font-size: 10px'>Unknown Planet</p>
+									<p class='list-group-item-text'><span style='color:yellow'><b>?</b></span> Ozone Layer</p>
+									<p class='list-group-item-text'><span style='color:yellow'><b>?</b></span> Water</p>
+									<p class='list-group-item-text'><span style='color:yellow'><b>?</b></span> Neutral Gravity</p>
+								</td>
+								<td style='width: 85%'>
+									<img class="imgBanner" src="images/error_banner.png">
+								</td>
+							</table>
+							<hr>
+							<p class='list-group-item-text'>404 Error. The information on this planet cannot be found. It is likely that our satellites have lost communication with base servers and are having issues transmitting the data. Once the servers are back online, information on this planet will be displayed.</p>
+						</div>
+					</div>
+					<div class="tab-pane" id="images">
+						<h3>Images</h3>
+						<div class='content-container'>
+							<div class='image-gallery row' id='kepler'>
+								<!--Kepler-->
+								<div class="col-lg-6"><a class='thumbnail-container' title="Ship Laboratory" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/ship_laboratory.jpg"></a></div>
+								<!--Aion-->
+								<div class="col-lg-6"><a class='thumbnail-container' title="Aion Balcony" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/aion_balcony.jpg"></a></div>
+								<div class="col-lg-6"><a class='thumbnail-container' title="Aion Side Entrance" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/aion_side_entrance.jpg"></a></div>
+								<div class="col-lg-6"><a class='thumbnail-container' title="Aion Laboratory" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/aion_laboratory.jpg"></a></div>
+								<!--Khione-->
+								<div class="col-lg-6"><a class='thumbnail-container' title="Khione Outside" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/khione_outside.jpg"></a></div>
+								<div class="col-lg-6"><a class='thumbnail-container' title="Khione Reception" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/khione_reception.jpg"></a></div>
+								<div class="col-lg-6"><a class='thumbnail-container' title="Khione Base" href="#"><img class="thumbnail-img img-responsive" src="images/gallery/kepler/khione_base.jpg"></a></div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="videos">
+						<h3>Videos</h3>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/GLBmUGhWrrQ" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>04 / 08 / 17</b></span>
+								<h4 class="media-heading">Khione Teaser</h4>
+								<p class='list-group-item-text'>This is the teaser trailer for Khione, the second planet to be shown off for Kepler.</p>
+								<p class='list-group-item-text'>Khione (Chee-oan) is a frozen planet, made up over majority of ice. An ozone layer exists on the planet with breathable air - though it is very cold and dry. Home to a new species of arachnid.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/5xhwV2NolBw" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>03 / 02 / 17</b></span>
+								<h4 class="media-heading">Update #7 | DIY Nailgun</h4>
+								<p class='list-group-item-text'>The seventh update for Kepler showcases the DLC weapon for Black Ops 3, the DIY Nailgun.</p>
+								<p class='list-group-item-text'>There have been other ports of the weapon which didn't do the weapon justice. Our port is a proper projectile weapon, using the correct sounds and textures.
+								The Nailgun also is setup as a Wall Weapon for the map; however, the positioning of all weapons, perks and other features will likely change.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/UtlhYMuA4kE" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>02 / 28 / 17</b></span>
+								<h4 class="media-heading">Update #6 | Spacesuits</h4>
+								<p class='list-group-item-text'>The sixth update for Kepler showcases the player models that will be used for the map. Spacesuits!</p>
+								<p class='list-group-item-text'>These space suit models were ripped out of Call of Duty Ghosts, but were heavily modified to better fit the map. The back of the model was completely remodeled as well as parts of the arms.
+								The textures were redone in parts as well as replaced logos with Kepler logos to suit the map better. Player head models are still yet to be decided on at this point until we have settled on a story and character designs.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/UTPeqY9vu2U" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>02 / 18 / 17</b></span>
+								<h4 class="media-heading">Update #5 | Custom Glock 19 Starting Pistol</h4>
+								<p class='list-group-item-text'>The fifth update for Kepler showcases my custom Glock 19 that I modeled and textured to be the starting pistol for Kepler.</p>
+								<p class='list-group-item-text'>This entire process of creating the Glock 19 was recorded and can be watched <a target="_blank" href="https://youtu.be/mBVvcXOg4Gg">here</a>. The Glock 19
+								wille be replacing the traditional MR6, and is still up in the air on if I will keep the suppressor on it or not. The animations for the Glock 19 were created by Lilrifa.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/hPBRPQFidqw" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>02 / 12 / 17</b></span>
+								<h4 class="media-heading">Update #4 | Karma Dual Magazine SMG</h4>
+								<p class='list-group-item-text'>The fourth update for Kepler showcases the Karma dual magazine smg from Infinite Warfare.</p>
+								<p class='list-group-item-text'>This weapon was ported by myself and took a bit of trickery to get the dual magazine capabilities of the weapon to work. I had to sacrifice the reload empty animations, but the gun is capable of doing a partial reload 
+								(reloading one magazine) when the gun still has more than half its ammo in its magazines, or a full reload (reloading both magazines) when the gun has less than half its ammo in its magazines.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/AHoh-6ZYrxI" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>01 / 23 / 17</b></span>
+								<h4 class="media-heading">Update #3 | EM1 Energy Weapon</h4>
+								<p class='list-group-item-text'>The third update for Kepler showcases the EM1 energy weapon from Advanced Warfare.</p>
+								<p class='list-group-item-text'>This weapon was ported by myself and scripted by both Awesome Pieman and myself. To balance the weapon having infinite ammo, we decided to have it overheat in a similar fashion to the flamethrower from World at War Zombies.
+								The HUD will display your current heat level for the weapon, and its best you keep an eye on it or else you will have to cooldown the gun until it is back down to normal.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/DeT_p1kDvUU" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>01 / 07 / 17</b></span>
+								<h4 class="media-heading">Update #2 | Gersch Device</h4>
+								<p class='list-group-item-text'>The second update for Kepler showcases the fan favorite wonder weapon equipment - the Gersch Device.</p>
+								<p class='list-group-item-text'>The model and textures for this updated Gersch Device were created by myself and I recorded the entire texturing process <a target="_blank" href="https://www.youtube.com/watch?v=pJUdXJS2FGA">here</a>.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/8-6crT0wWWI" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>01 / 06 / 17</b></span>
+								<h4 class="media-heading">Update #1 | Claw Powerup Drop & Metal Windows</h4>
+								<p class='list-group-item-text'>This is the first update to Kepler in the new year. I will be showing off two new features exclusive to the map.</p>
+								<p class='list-group-item-text'>The Claw powerup drop will be replacing the Death Machine from the classic Black Ops 3 Zombies. The Claw was an extremely powerful and effective specialist weapon
+								from Infinite Warfare. With the futuristic theme, metal barricades will be replacing the traditional wooden ones.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/bhasMh3lN0w" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>12 / 25 / 16</b></span>
+								<h4 class="media-heading">Aion Teaser</h4>
+								<p class='list-group-item-text'>A Christmas present from JBird632 and Awesome Pieman. This video shows off our first planet for Kepler called Aion.</p>
+								<p class='list-group-item-text'>Aion is a small red desert planet similar to Mars; however, Aion is extremely dense and has aproximately double the gravitational pull than Earth.
+								There doesn't seem like there are any life forms capable of living on this planet, and our search moves on to newer planets in hopes to find a suitable home for the human race.</p>
+							</div>
+						</div>
+						<div class="content-container media">
+							<div class="media-left">
+								<iframe class='media-video' src="https://www.youtube.com/embed/XukDF31xpOY" frameborder="0" allowfullscreen></iframe>
+							</div>
+							<div class="media-body">
+								<span class="label label-default" style='padding: 5px; float: right; margin: 3px 6px;'><i class="fa fa-calendar" aria-hidden="true"></i>&nbsp&nbsp<b>12 / 12 / 16</b></span>
+								<h4 class="media-heading">Space Ship Teaser</h4>
+								<p class='list-group-item-text'>This is the reveal teaser for our project Kepler. This is showing off the Laboratory to the Ship.</p>
+								<p class='list-group-item-text'>Kepler began as a room for the Community map, but transformed into its own full sized map.
+								With the resources on Earth being used up at a rapid pace, its just a matter of time before we run out. We are in search of a new home, lets hope our ship and crew can find it soon.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+	</div>
 
-		<div class="funcFormat kepler-default" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<table style="width:20%">
-					<tr>
-						<th style="text-align: left;"><div><div><h1 class="bodyTitle" style="width: 100%">KEPLER</h1>
-						<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Call of Duty: Black Ops III</h4></div></th>
-					</tr>
-				</table>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px; width: 49%" ><pre class="fill-text" id="kepler_info"></pre></li>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;width: 47%;"><img class="clickable-image" id="img-kepler-overlook" src="https://i.gyazo.com/893dd95a49fb9d6a1188d9ef08759fcb.jpg" style="width: 100%;"
-				onclick="openImageModel('img-kepler-overlook')" alt="Kepler Planets Reveal"></li>
-			</ul>
+	<div tabindex="-1" class="img-modal fade" id="image-model" role="dialog">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h4 class='modal-title'></h4>
+					<button class="close-btn" type="button" data-dismiss="modal"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+				</div>
+				<div class="modal-body"></div>
+			</div>
 		</div>
+	</div>
+	
+	<footer class='footer-top'>
+		<span class='footer-note'>&#9400; 2017 JBird632</span>
+		<span class='footer-note'>Site Version 0.2</span>
+	</footer>
+	<footer class='footer-base'></footer>
 
-		<!-- Planets Section -->
-		<div class="funcFormat kepler-planets" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block" id="category-kepler-planets">
-				<table style="width:20%">
-					<tr>
-						<th style="text-align: left;"><div><div><h1 class="bodyTitle" style="width: 100%">Aion-54B</h1>
-						<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Red Desert Planet</h4></div></th>
-						<th><img class="planetIcon" src="images/planet_icon_aion.png" alt="Aion"></th>
-						<th></th>
-					</tr>
-				</table>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px; width: 49%" ><pre class="fill-text" id="aion_info"></pre></li>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/bhasMh3lN0w" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-planets" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block" id="category-kepler-planets">
-				<table style="width:20%">
-					<tr>
-						<th style="text-align: left;"><div><div><h1 class="bodyTitle" style="width: 100%"><span class="randomize-letters">AAAAAA</span>-<span class="randomize-numbers">11</span></h1>
-						<h4 class="bodyTitle" style="width: 100%; color: #0897C1"><span style="color: #CA2715">Error: DATA NOT FOUND</span></h4></div></th>
-						<th><img class="planetIcon" src="images/planet_icon_error.png" alt="Error"></th>
-						<th></th>
-					</tr>
-				</table>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px; width: 49%" ><pre class="fill-text" id="error_a_info"></pre></li>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><img width="560" height="315" src="images/static_error.gif" alt="Error" frameborder="0" allowfullscreen></img></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-planets" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block" id="category-kepler-planets">
-				<table style="width:20%">
-					<tr>
-						<th style="text-align: left;"><div><div><h1 class="bodyTitle" style="width: 100%"><span class="randomize-letters">AAAAA</span>-<span class="randomize-numbers">11</span></h1>
-						<h4 class="bodyTitle" style="width: 100%; color: #0897C1"><span style="color: #CA2715">Error: DATA NOT FOUND</span></h4></div></th>
-						<th><img class="planetIcon" src="images/planet_icon_error.png" alt="Error"></th>
-						<th></th>
-					</tr>
-				</table>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px; width: 49%" ><pre class="fill-text" id="error_b_info"></pre></li>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><img width="560" height="315" src="images/static_error.gif" alt="Error" frameborder="0" allowfullscreen></img></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-planets" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block" id="category-kepler-planets">
-				<table style="width:20%">
-					<tr>
-						<th style="text-align: left;"><div><div><h1 class="bodyTitle" style="width: 100%"><span class="randomize-letters">AAAAAA</span>-<span class="randomize-numbers">111</span></h1>
-						<h4 class="bodyTitle" style="width: 100%; color: #0897C1"><span style="color: #CA2715">Error: DATA NOT FOUND</span></h4></div></th>
-						<th><img class="planetIcon" src="images/planet_icon_error.png" alt="Error"></th>
-						<th></th>
-					</tr>
-				</table>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px; width: 49%" ><pre class="fill-text" id="error_c_info"></pre></li>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><img width="560" height="315" src="images/static_error.gif" alt="Error" frameborder="0" allowfullscreen></img></li>
-			</ul>
-		</div>
-
-		<!-- Pictures Section -->
-		<div class="funcFormat kepler-pictures" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<table>
-					<tr>
-						<img class="clickable-image" id="img-spaceship" src="/images/kepler_station_bg.jpg" alt="Kepler Spaceship" alt="Kepler Spaceship" onclick="openImageModel('img-spaceship')">
-						<img class="clickable-image" id="img-tac19-window" src="https://i.gyazo.com/a01c1c860d12c052c076154f1f1c402c.jpg" alt="Tac19 with Metal Windows" onclick="openImageModel('img-tac19-window')">
-						<img class="clickable-image" id="img-nv4-aion" src="https://i.gyazo.com/c887e13accac34f05aef2f7d59a813bd.jpg" alt="NV4 on Aion" onclick="openImageModel('img-nv4-aion')">
-						<img class="clickable-image" id="img-aion-deck" src="https://i.gyazo.com/04c8210a07cf7ae8b20f5e7c56c5216c.jpg" alt="Aion Observation Deck" onclick="openImageModel('img-aion-deck')">
-						<img class="clickable-image" id="img-aion-lab" src="https://i.gyazo.com/9c43e7fb1b8368a39d465f2ff32e10bc.jpg" alt="Aion Laboratory" onclick="openImageModel('img-aion-lab')">
-					</tr>
-				</table>
-			</ul>
-		</div>
-
-		<!-- Videos Section -->		
-		<div class="funcFormat kepler-videos" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<div><div><h1 class="bodyTitle" style="width: 100%">EM1 Energy Weapon</h1>
-				<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Jan 23, 2017</h4></div>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/AHoh-6ZYrxI" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-videos" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<div><div><h1 class="bodyTitle" style="width: 100%">Gersch Device</h1>
-				<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Jan 7, 2017</h4></div>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/DeT_p1kDvUU" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-videos" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<div><div><h1 class="bodyTitle" style="width: 100%">Claw Powerup | Metal Windows</h1>
-				<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Jan 6, 2017</h4></div>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/8-6crT0wWWI" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-videos" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<div><div><h1 class="bodyTitle" style="width: 100%">Aion Teaser</h1>
-				<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Dec 25, 2016</h4></div>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/bhasMh3lN0w" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-		<div class="funcFormat kepler-videos" style="margin: 10px 5% 10px 5%; display:none">
-			<ul class="ref-block">
-				<div><div><h1 class="bodyTitle" style="width: 100%">Spaceship Teaser</h1>
-				<h4 class="bodyTitle" style="width: 100%; color: #0897C1">Dec 12, 2016</h4></div>
-				<li class="bodyFormat-inset" style="margin:0px 0px 20px 20px;"><iframe width="560" height="315" src="https://www.youtube.com/embed/XukDF31xpOY" frameborder="0" allowfullscreen></iframe></li>
-			</ul>
-		</div>
-
-		<div id="image-model" class="image-model">
-			<span class="model-close" onclick="document.getElementById('image-model').style.display='none'">&times;</span>
-			<img class="image-model-picture" id="image-model-picture" src="images/jbird_icon.ico">
-			<div id="caption"></div>
-		</div>
-
-		<script src="utility.js"></script>
+	<script src='tutorials.js'></script>
+	<script src='image_gallery.js'></script>
+	<script src="sidebar.js"></script>
+	<script src="progress.js"></script>
+	<script src="utility.js"></script>
+	<script src='bootstrap_tab_panels.js'></script>
+	<script type="text/javascript">
+		$(function () 
+		{
+	        $("[data-toggle=tooltip]").tooltip();
+	    });
+	</script>
 </body>
-
 </html>
