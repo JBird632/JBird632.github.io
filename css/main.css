@@ -1,0 +1,637 @@
+/* line 1, src/sass/base.scss */
+html, body {
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  box-sizing: border-box;
+  font-family: Verdana;
+  color: lightgrey;
+  width: 100%;
+  margin: 0px;
+  padding: 0px; }
+
+/* line 13, src/sass/base.scss */
+span {
+  margin: 0px;
+  font-size: 15px; }
+
+/* line 18, src/sass/base.scss */
+ul {
+  list-style-type: none; }
+
+/* Code Boxes */
+/* line 2, src/sass/codebox.scss */
+.code-box {
+  border: 3px solid #262626;
+  border-radius: 4px;
+  margin: 35px 0px 5px 0px;
+  background-color: #2D2F32;
+  position: relative;
+  overflow-x: auto; }
+
+/* line 10, src/sass/codebox.scss */
+.code {
+  margin: 5px;
+  padding: 10px;
+  border: 2px solid #262626;
+  border-radius: 3px;
+  background-color: #393D45; }
+
+/* line 17, src/sass/codebox.scss */
+.code:nth-child(even) {
+  background-color: #646464; }
+
+/* line 20, src/sass/codebox.scss */
+.code-title {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0px;
+  padding: 5px 10px; }
+
+/* line 26, src/sass/codebox.scss */
+.code-language {
+  border-right: 3px solid #262626;
+  border-top: 3px solid #262626;
+  border-left: 3px solid #262626;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  right: -3px;
+  top: -31px;
+  padding: 5px;
+  background-color: #2D2F32;
+  color: #6AA767; }
+
+/* line 41, src/sass/codebox.scss */
+.code-select {
+  margin-left: 5px;
+  font-size: 11px;
+  font-weight: normal;
+  color: #EEE;
+  cursor: pointer; }
+
+/* line 48, src/sass/codebox.scss */
+.code-select:hover {
+  color: white; }
+
+/* line 3, src/sass/components.scss */
+.content {
+  background: -webkit-linear-gradient(left top, #2B2B2B, #1C1C1C);
+  background: -o-linear-gradient(bottom right, #2B2B2B, #1C1C1C);
+  background: -moz-linear-gradient(bottom right, #2B2B2B, #1C1C1C);
+  background: linear-gradient(to bottom right, #2B2B2B, #1C1C1C);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding: 10px; }
+
+/* line 16, src/sass/components.scss */
+.title {
+  margin: 0px;
+  color: #CA7938; }
+
+/* line 21, src/sass/components.scss */
+.subtitle {
+  margin: 0px;
+  font-size: 10px; }
+
+/* line 26, src/sass/components.scss */
+.version {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 8px; }
+
+/* line 33, src/sass/components.scss */
+.container {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-top: 0px;
+  padding: 5px;
+  margin: 10px; }
+
+/* line 42, src/sass/components.scss */
+.container-text {
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -pre-wrap;
+  white-space: -o-pre-wrap;
+  word-wrap: break-word; }
+
+/* line 50, src/sass/components.scss */
+.scroll-bar {
+  overflow-y: auto; }
+
+/* line 54, src/sass/components.scss */
+.scroll-bar-y {
+  overflow-y: auto;
+  overflow-x: hidden; }
+
+/* line 59, src/sass/components.scss */
+.scroll-bar::-webkit-scrollbar-track {
+  background-color: #303234;
+  border-radius: 25px; }
+
+/* line 64, src/sass/components.scss */
+.scroll-bar::-webkit-scrollbar {
+  background-color: #303234;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%; }
+
+/* line 71, src/sass/components.scss */
+.scroll-bar::-webkit-scrollbar-thumb {
+  background-color: #262626;
+  border: 2px solid #303234;
+  border-radius: 10px; }
+
+/* Side Scroll View */
+/* line 81, src/sass/components.scss */
+.header-bar {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  height: 50px;
+  padding: 10px; }
+
+/* line 90, src/sass/components.scss */
+.side-bar {
+  position: absolute;
+  left: 0px;
+  width: 300px;
+  top: 50px;
+  bottom: 0px;
+  padding: 3px;
+  color: lightgrey; }
+
+/* line 100, src/sass/components.scss */
+.side-bar-search {
+  padding: 10px;
+  padding-bottom: 5px;
+  border-bottom: 5px solid #303234; }
+
+/* line 106, src/sass/components.scss */
+.side-bar-list {
+  margin: 10px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  position: absolute;
+  top: 85px;
+  bottom: 0px;
+  left: 0px;
+  right: 10px; }
+
+/* line 118, src/sass/components.scss */
+.pointer {
+  cursor: pointer; }
+
+/* line 122, src/sass/components.scss */
+.side-bar-loading {
+  margin: 10px 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  overflow-y: auto;
+  position: absolute;
+  top: 85px;
+  bottom: 0px;
+  left: 0px;
+  right: 10px; }
+
+/* line 134, src/sass/components.scss */
+.label {
+  font-size: 12px;
+  padding: 4px;
+  border-radius: 3px;
+  color: lightgrey;
+  border: 0px; }
+
+/* line 142, src/sass/components.scss */
+.side-bar-item {
+  padding: 4px 2px;
+  font-size: 14px; }
+
+/* line 147, src/sass/components.scss */
+.side-bar-item-selected {
+  background-color: #33373F;
+  color: DEEPSKYBLUE; }
+
+/* line 152, src/sass/components.scss */
+.side-bar-item:hover {
+  background-color: #303234; }
+
+/* line 156, src/sass/components.scss */
+.search-bar {
+  border-radius: 4px;
+  background-color: #303234;
+  border: 0px;
+  color: lightgrey;
+  padding: 5px; }
+
+/* line 164, src/sass/components.scss */
+.main-view {
+  padding: 15px;
+  position: absolute;
+  left: 300px;
+  right: 0px;
+  top: 50px;
+  bottom: 0px;
+  overflow-y: auto;
+  background-color: #303234; }
+
+/* line 1, src/sass/script_reference.scss */
+.script-reference-header {
+  margin: 0px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #262626; }
+
+/* line 8, src/sass/script_reference.scss */
+.script-header {
+  display: inline-block; }
+
+/* line 12, src/sass/script_reference.scss */
+.script-image {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin-right: 10px; }
+
+/* line 19, src/sass/script_reference.scss */
+.report-issues-header {
+  margin: 0px;
+  padding: 10px;
+  border-radius: 3px;
+  background-color: #262626; }
+
+/* line 26, src/sass/script_reference.scss */
+.script-reference-summary {
+  font-size: 13px; }
+
+/* line 30, src/sass/script_reference.scss */
+.script-reference-return-details {
+  font-size: 13px; }
+
+/* line 34, src/sass/script_reference.scss */
+.script-reference-access {
+  font-size: 11px;
+  position: relative;
+  z-index: 10;
+  padding: 3px;
+  border-radius: 5px;
+  border: 2px solid #242424;
+  background-color: #262626;
+  margin-right: 10px; }
+
+/* line 45, src/sass/script_reference.scss */
+.script-reference-section {
+  font-size: 11px;
+  position: relative;
+  z-index: 10;
+  padding: 3px;
+  border-radius: 5px;
+  border: 2px solid #242424;
+  background-color: #262626;
+  margin-right: 10px; }
+
+/* line 56, src/sass/script_reference.scss */
+.script-reference-section-details {
+  font-size: 13px; }
+
+/* line 60, src/sass/script_reference.scss */
+.script-reference-return-value {
+  font-size: 11px;
+  position: relative;
+  z-index: 10;
+  padding: 3px;
+  border-radius: 5px;
+  border: 2px solid #242424;
+  background-color: #262626;
+  margin-right: 10px; }
+
+/* line 71, src/sass/script_reference.scss */
+.script-reference-reference-variable {
+  font-size: 11px;
+  position: relative;
+  z-index: 10;
+  padding: 3px;
+  border-radius: 5px;
+  border: 2px solid #242424;
+  background-color: #262626;
+  margin-right: 10px; }
+
+/* line 82, src/sass/script_reference.scss */
+.script-reference-reference-details {
+  font-size: 13px; }
+
+/* line 86, src/sass/script_reference.scss */
+.search-bar {
+  margin: 0px 10px 0px 0px;
+  width: 200px;
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 95, src/sass/script_reference.scss */
+.section-select {
+  margin: 5px 10px 0px 0px;
+  width: 200px;
+  border-radius: 4px;
+  background-color: #303234;
+  border: 0px;
+  color: lightgrey;
+  padding: 5px;
+  -ms-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box; }
+
+/* line 109, src/sass/script_reference.scss */
+.search-button {
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #33373F;
+  color: lightgrey;
+  border: 0px;
+  cursor: pointer; }
+
+/* line 119, src/sass/script_reference.scss */
+.clear-button {
+  font-size: 14px;
+  padding: 4px;
+  border-radius: 3px;
+  background-color: #33373F;
+  color: lightgrey;
+  border: 0px;
+  cursor: pointer; }
+
+/* line 129, src/sass/script_reference.scss */
+.search-button:hover {
+  background-color: #44484F; }
+
+/* line 133, src/sass/script_reference.scss */
+.clear-button:hover {
+  background-color: #44484F; }
+
+/* line 137, src/sass/script_reference.scss */
+.script-reference-detail-container {
+  border: 1px solid #262626;
+  border-radius: 5px;
+  padding: 12px;
+  position: relative;
+  margin-top: 15px; }
+
+/* line 145, src/sass/script_reference.scss */
+.script-reference-detail-header {
+  position: absolute;
+  top: -14px;
+  left: 7px;
+  background-color: #303234;
+  padding: 5px;
+  color: #1b1b1b;
+  font-size: 12px;
+  font-weight: 100; }
+
+/* line 156, src/sass/script_reference.scss */
+.script-reference-requirement {
+  font-size: 11px;
+  position: relative;
+  z-index: 10;
+  padding: 3px;
+  border-radius: 5px;
+  border: 2px solid #242424;
+  background-color: #262626;
+  margin-right: 10px; }
+
+/* line 167, src/sass/script_reference.scss */
+.script-reference-variable {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #CCA61D; }
+
+/* line 173, src/sass/script_reference.scss */
+.script-reference-description {
+  font-size: 11px; }
+
+/* line 177, src/sass/script_reference.scss */
+.script-reference-code-box {
+  border: 1px solid #262626;
+  border-radius: 4px;
+  margin: 0px;
+  background-color: #33373F;
+  padding: 5px; }
+
+/* line 185, src/sass/script_reference.scss */
+.script-reference-variable-container {
+  margin-bottom: 7px; }
+
+/* line 189, src/sass/script_reference.scss */
+.script-reference-no-variable {
+  font-style: italic;
+  color: #1b1b1b;
+  font-size: 12px; }
+
+/* line 195, src/sass/script_reference.scss */
+.copy-to-clipboard {
+  padding: 5px 5px 6px 8px;
+  background-color: #262626;
+  border-right: 1px solid #1b1b1b;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  cursor: pointer; }
+
+/* line 204, src/sass/script_reference.scss */
+.copy-to-clipboard:hover {
+  background-color: #373737; }
+
+/* line 208, src/sass/script_reference.scss */
+.clipboard-notification {
+  z-index: 10;
+  position: absolute;
+  top: -8px;
+  left: 12px;
+  font-size: 10px;
+  padding: 5px;
+  background-color: #262626;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/* line 221, src/sass/script_reference.scss */
+.script-reference-function {
+  padding: 5px;
+  border: 1px solid #262626;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  margin: 0px;
+  background-color: #33373F;
+  overflow-x: auto;
+  position: absolute;
+  left: 40px;
+  top: 12px;
+  right: 10px;
+  bottom: 10px; }
+
+/* line 236, src/sass/script_reference.scss */
+.function-style {
+  color: DEEPSKYBLUE;
+  font-size: 12px; }
+
+/* line 241, src/sass/script_reference.scss */
+.function-parameters {
+  font-size: 12px; }
+
+/* line 245, src/sass/script_reference.scss */
+.report-button {
+  position: absolute;
+  right: 5px;
+  top: 25px;
+  font-size: 12px;
+  padding: 2px 4px;
+  border-radius: 3px;
+  background-color: #33373F;
+  color: lightgrey;
+  border: 0px;
+  cursor: pointer; }
+
+/* line 258, src/sass/script_reference.scss */
+.report-button:hover {
+  background-color: #44484F; }
+
+/* line 262, src/sass/script_reference.scss */
+.form-text {
+  font-size: 12px; }
+
+/* line 266, src/sass/script_reference.scss */
+.report-function-input {
+  border-radius: 4px;
+  background-color: #35383c;
+  border: 0px;
+  padding: 5px;
+  margin-left: 10px;
+  color: lightgrey; }
+
+/* line 275, src/sass/script_reference.scss */
+.form-element {
+  margin-bottom: 10px; }
+
+/* line 279, src/sass/script_reference.scss */
+.form-label {
+  font-size: 12px; }
+
+/* line 283, src/sass/script_reference.scss */
+.hidden {
+  display: none; }
+
+/* line 287, src/sass/script_reference.scss */
+.submit-button {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 3px;
+  background-color: #33373F;
+  color: lightgrey;
+  border: 0px;
+  cursor: pointer; }
+
+/* line 300, src/sass/script_reference.scss */
+.submit-button:hover {
+  background-color: #5f5f5f; }
+
+/* line 304, src/sass/script_reference.scss */
+.side-bar-loading {
+  background-color: #262626;
+  opacity: 0.9;
+  z-index: 10; }
+
+/* line 310, src/sass/script_reference.scss */
+.loading-center {
+  position: absolute;
+  top: 45%;
+  font-weight: bold;
+  margin-left: 75px; }
+
+/* line 317, src/sass/script_reference.scss */
+.loading-spinner {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 1000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 1000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 1000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@-ms-keyframes spin {
+  /* line 338, src/sass/script_reference.scss */
+  from {
+    -ms-transform: rotate(0deg); }
+  /* line 339, src/sass/script_reference.scss */
+  to {
+    -ms-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+/* line 358, src/sass/script_reference.scss */
+.script-reference-footer-text {
+  font-size: 8px;
+  margin: 0px;
+  padding: 0px;
+  float: right;
+  opacity: 0.5;
+  color: lightgrey; }
+
+/* line 367, src/sass/script_reference.scss */
+.script-reference-footer {
+  padding: 7px;
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
+  background-color: #262626;
+  left: 300px;
+  height: 9px; }
+
+/* line 378, src/sass/script_reference.scss */
+.script-reference-footer-base {
+  z-index: 10px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 10px;
+  background-color: #1b1b1b;
+  left: 300px; }
