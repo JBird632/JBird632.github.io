@@ -19,6 +19,13 @@ span {
 ul {
   list-style-type: none; }
 
+/* line 22, src/sass/base.scss */
+hr {
+  border: 0px;
+  border: 1px solid #1b1b1b;
+  margin-bottom: 10px;
+  opacity: 0.5; }
+
 /* Code Boxes */
 /* line 2, src/sass/codebox.scss */
 .code-box {
@@ -272,14 +279,22 @@ ul {
 
 /* line 26, src/sass/script_reference.scss */
 .script-reference-summary {
-  font-size: 13px; }
+  font-size: 13px;
+  margin: 0px 0px 10px 0px;
+  padding: 0px; }
 
-/* line 30, src/sass/script_reference.scss */
+/* line 32, src/sass/script_reference.scss */
 .script-reference-return-details {
   font-size: 13px; }
 
-/* line 34, src/sass/script_reference.scss */
+/* line 36, src/sass/script_reference.scss */
 .script-reference-access {
+  font-size: 12px;
+  margin-right: 10px;
+  color: #CCA61D; }
+
+/* line 42, src/sass/script_reference.scss */
+.script-reference-container-title {
   font-size: 11px;
   position: relative;
   z-index: 10;
@@ -289,48 +304,37 @@ ul {
   background-color: #262626;
   margin-right: 10px; }
 
-/* line 45, src/sass/script_reference.scss */
+/* line 53, src/sass/script_reference.scss */
+.script-reference-access-details {
+  font-size: 13px; }
+
+/* line 57, src/sass/script_reference.scss */
 .script-reference-section {
-  font-size: 11px;
-  position: relative;
-  z-index: 10;
-  padding: 3px;
-  border-radius: 5px;
-  border: 2px solid #242424;
-  background-color: #262626;
-  margin-right: 10px; }
+  font-size: 12px;
+  margin-right: 10px;
+  color: #CCA61D; }
 
-/* line 56, src/sass/script_reference.scss */
+/* line 63, src/sass/script_reference.scss */
 .script-reference-section-details {
   font-size: 13px; }
 
-/* line 60, src/sass/script_reference.scss */
+/* line 67, src/sass/script_reference.scss */
 .script-reference-return-value {
-  font-size: 11px;
-  position: relative;
-  z-index: 10;
-  padding: 3px;
-  border-radius: 5px;
-  border: 2px solid #242424;
-  background-color: #262626;
-  margin-right: 10px; }
+  font-size: 12px;
+  margin-right: 10px;
+  color: #CCA61D; }
 
-/* line 71, src/sass/script_reference.scss */
+/* line 73, src/sass/script_reference.scss */
 .script-reference-reference-variable {
-  font-size: 11px;
-  position: relative;
-  z-index: 10;
-  padding: 3px;
-  border-radius: 5px;
-  border: 2px solid #242424;
-  background-color: #262626;
-  margin-right: 10px; }
+  font-size: 12px;
+  margin-right: 10px;
+  color: #CCA61D; }
 
-/* line 82, src/sass/script_reference.scss */
+/* line 79, src/sass/script_reference.scss */
 .script-reference-reference-details {
   font-size: 13px; }
 
-/* line 86, src/sass/script_reference.scss */
+/* line 83, src/sass/script_reference.scss */
 .search-bar {
   margin: 0px 10px 0px 0px;
   width: 200px;
@@ -339,7 +343,7 @@ ul {
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 95, src/sass/script_reference.scss */
+/* line 92, src/sass/script_reference.scss */
 .section-select {
   margin: 5px 10px 0px 0px;
   width: 200px;
@@ -353,7 +357,7 @@ ul {
   -webkit-box-sizing: content-box;
   box-sizing: content-box; }
 
-/* line 109, src/sass/script_reference.scss */
+/* line 106, src/sass/script_reference.scss */
 .search-button {
   font-size: 14px;
   padding: 4px;
@@ -363,7 +367,7 @@ ul {
   border: 0px;
   cursor: pointer; }
 
-/* line 119, src/sass/script_reference.scss */
+/* line 116, src/sass/script_reference.scss */
 .clear-button {
   font-size: 14px;
   padding: 4px;
@@ -373,15 +377,15 @@ ul {
   border: 0px;
   cursor: pointer; }
 
-/* line 129, src/sass/script_reference.scss */
+/* line 126, src/sass/script_reference.scss */
 .search-button:hover {
   background-color: #44484F; }
 
-/* line 133, src/sass/script_reference.scss */
+/* line 130, src/sass/script_reference.scss */
 .clear-button:hover {
   background-color: #44484F; }
 
-/* line 137, src/sass/script_reference.scss */
+/* line 134, src/sass/script_reference.scss */
 .script-reference-detail-container {
   border: 1px solid #262626;
   border-radius: 5px;
@@ -389,7 +393,7 @@ ul {
   position: relative;
   margin-top: 15px; }
 
-/* line 145, src/sass/script_reference.scss */
+/* line 142, src/sass/script_reference.scss */
 .script-reference-detail-header {
   position: absolute;
   top: -14px;
@@ -400,7 +404,7 @@ ul {
   font-size: 12px;
   font-weight: 100; }
 
-/* line 156, src/sass/script_reference.scss */
+/* line 153, src/sass/script_reference.scss */
 .script-reference-requirement {
   font-size: 11px;
   position: relative;
@@ -411,17 +415,17 @@ ul {
   background-color: #262626;
   margin-right: 10px; }
 
-/* line 167, src/sass/script_reference.scss */
+/* line 164, src/sass/script_reference.scss */
 .script-reference-variable {
   font-size: 12px;
   margin-right: 10px;
   color: #CCA61D; }
 
-/* line 173, src/sass/script_reference.scss */
+/* line 170, src/sass/script_reference.scss */
 .script-reference-description {
   font-size: 11px; }
 
-/* line 177, src/sass/script_reference.scss */
+/* line 174, src/sass/script_reference.scss */
 .script-reference-code-box {
   border: 1px solid #262626;
   border-radius: 4px;
@@ -429,17 +433,17 @@ ul {
   background-color: #33373F;
   padding: 5px; }
 
-/* line 185, src/sass/script_reference.scss */
+/* line 182, src/sass/script_reference.scss */
 .script-reference-variable-container {
   margin-bottom: 7px; }
 
-/* line 189, src/sass/script_reference.scss */
+/* line 186, src/sass/script_reference.scss */
 .script-reference-no-variable {
   font-style: italic;
   color: #1b1b1b;
   font-size: 12px; }
 
-/* line 195, src/sass/script_reference.scss */
+/* line 192, src/sass/script_reference.scss */
 .copy-to-clipboard {
   padding: 5px 5px 6px 8px;
   background-color: #262626;
@@ -448,11 +452,11 @@ ul {
   border-bottom-left-radius: 4px;
   cursor: pointer; }
 
-/* line 204, src/sass/script_reference.scss */
+/* line 201, src/sass/script_reference.scss */
 .copy-to-clipboard:hover {
   background-color: #373737; }
 
-/* line 208, src/sass/script_reference.scss */
+/* line 205, src/sass/script_reference.scss */
 .clipboard-notification {
   z-index: 10;
   position: absolute;
@@ -465,7 +469,7 @@ ul {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px; }
 
-/* line 221, src/sass/script_reference.scss */
+/* line 218, src/sass/script_reference.scss */
 .script-reference-function {
   padding: 5px;
   border: 1px solid #262626;
@@ -480,16 +484,16 @@ ul {
   right: 10px;
   bottom: 10px; }
 
-/* line 236, src/sass/script_reference.scss */
+/* line 233, src/sass/script_reference.scss */
 .function-style {
   color: DEEPSKYBLUE;
   font-size: 12px; }
 
-/* line 241, src/sass/script_reference.scss */
+/* line 238, src/sass/script_reference.scss */
 .function-parameters {
   font-size: 12px; }
 
-/* line 245, src/sass/script_reference.scss */
+/* line 242, src/sass/script_reference.scss */
 .report-button {
   position: absolute;
   right: 5px;
@@ -502,15 +506,15 @@ ul {
   border: 0px;
   cursor: pointer; }
 
-/* line 258, src/sass/script_reference.scss */
+/* line 255, src/sass/script_reference.scss */
 .report-button:hover {
   background-color: #44484F; }
 
-/* line 262, src/sass/script_reference.scss */
+/* line 259, src/sass/script_reference.scss */
 .form-text {
   font-size: 12px; }
 
-/* line 266, src/sass/script_reference.scss */
+/* line 263, src/sass/script_reference.scss */
 .report-function-input {
   border-radius: 4px;
   background-color: #35383c;
@@ -519,19 +523,19 @@ ul {
   margin-left: 10px;
   color: lightgrey; }
 
-/* line 275, src/sass/script_reference.scss */
+/* line 272, src/sass/script_reference.scss */
 .form-element {
   margin-bottom: 10px; }
 
-/* line 279, src/sass/script_reference.scss */
+/* line 276, src/sass/script_reference.scss */
 .form-label {
   font-size: 12px; }
 
-/* line 283, src/sass/script_reference.scss */
+/* line 280, src/sass/script_reference.scss */
 .hidden {
   display: none; }
 
-/* line 287, src/sass/script_reference.scss */
+/* line 284, src/sass/script_reference.scss */
 .submit-button {
   position: absolute;
   right: 15px;
@@ -544,24 +548,24 @@ ul {
   border: 0px;
   cursor: pointer; }
 
-/* line 300, src/sass/script_reference.scss */
+/* line 297, src/sass/script_reference.scss */
 .submit-button:hover {
   background-color: #5f5f5f; }
 
-/* line 304, src/sass/script_reference.scss */
+/* line 301, src/sass/script_reference.scss */
 .side-bar-loading {
   background-color: #262626;
   opacity: 0.9;
   z-index: 10; }
 
-/* line 310, src/sass/script_reference.scss */
+/* line 307, src/sass/script_reference.scss */
 .loading-center {
   position: absolute;
   top: 45%;
   font-weight: bold;
   margin-left: 75px; }
 
-/* line 317, src/sass/script_reference.scss */
+/* line 314, src/sass/script_reference.scss */
 .loading-spinner {
   -webkit-animation-name: spin;
   -webkit-animation-duration: 1000ms;
@@ -581,10 +585,10 @@ ul {
   animation-timing-function: linear; }
 
 @-ms-keyframes spin {
-  /* line 338, src/sass/script_reference.scss */
+  /* line 335, src/sass/script_reference.scss */
   from {
     -ms-transform: rotate(0deg); }
-  /* line 339, src/sass/script_reference.scss */
+  /* line 336, src/sass/script_reference.scss */
   to {
     -ms-transform: rotate(360deg); } }
 
@@ -606,7 +610,7 @@ ul {
   to {
     transform: rotate(360deg); } }
 
-/* line 358, src/sass/script_reference.scss */
+/* line 355, src/sass/script_reference.scss */
 .script-reference-footer-text {
   font-size: 8px;
   margin: 0px;
@@ -615,7 +619,7 @@ ul {
   opacity: 0.5;
   color: lightgrey; }
 
-/* line 367, src/sass/script_reference.scss */
+/* line 364, src/sass/script_reference.scss */
 .script-reference-footer {
   padding: 7px;
   z-index: 10;
@@ -626,7 +630,7 @@ ul {
   left: 300px;
   height: 9px; }
 
-/* line 378, src/sass/script_reference.scss */
+/* line 375, src/sass/script_reference.scss */
 .script-reference-footer-base {
   z-index: 10px;
   position: absolute;
