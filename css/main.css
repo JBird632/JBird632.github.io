@@ -153,7 +153,7 @@ hr {
 
 /* line 71, src/sass/components.scss */
 .scroll-bar::-webkit-scrollbar-thumb {
-  background-color: #262626;
+  background-color: #2B2B2B;
   border: 2px solid #303234;
   border-radius: 10px; }
 
@@ -177,13 +177,86 @@ hr {
   padding: 3px;
   color: lightgrey; }
 
-/* line 100, src/sass/components.scss */
+@media only screen and (max-width: 768px) {
+  /* line 101, src/sass/components.scss */
+  html {
+    font-size: 10px !important; }
+  /* line 105, src/sass/components.scss */
+  .script-image-mobile {
+    width: 30px !important;
+    height: 30px !important; }
+  /* line 110, src/sass/components.scss */
+  .side-bar-mobile {
+    right: 0px !important;
+    left: 0px !important;
+    top: 55px !important;
+    z-index: 10;
+    width: auto;
+    background-color: #2B2B2B; }
+  /* line 119, src/sass/components.scss */
+  .side-bar-search-mobile {
+    right: 0px !important;
+    left: 0px !important; }
+  /* line 124, src/sass/components.scss */
+  .main-view-mobile {
+    left: 0px !important;
+    right: 0px !important;
+    top: 55px !important;
+    z-index: 0; }
+  /* line 131, src/sass/components.scss */
+  .script-reference-footer-mobile {
+    left: 0px !important;
+    right: 0px !important; }
+  /* line 136, src/sass/components.scss */
+  .script-reference-footer-base-mobile {
+    left: 0px !important;
+    right: 0px !important; }
+  /* line 141, src/sass/components.scss */
+  .loading-center-mobile {
+    left: auto !important;
+    right: auto !important;
+    margin: auto !important;
+    width: 100%;
+    text-align: center; }
+  /* line 149, src/sass/components.scss */
+  .side-bar-toggle {
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    padding: 22px 10px;
+    width: 5px;
+    font-size: 14px;
+    border-radius: 3px;
+    background-color: #33373F;
+    color: lightgrey;
+    border: 0px;
+    display: block !important;
+    cursor: pointer; }
+  /* line 165, src/sass/components.scss */
+  .clear-button-mobile {
+    padding-left: 4px !important;
+    padding-right: 4px !important; }
+  /* line 170, src/sass/components.scss */
+  .side-bar-bottom-toggle-mobile {
+    display: block !important; } }
+
+/* line 175, src/sass/components.scss */
+.side-bar-button {
+  padding: 10px 50px;
+  font-size: 14px !important;
+  background-color: #2B2B2B;
+  color: lightgrey;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px; }
+
+/* line 184, src/sass/components.scss */
 .side-bar-search {
   padding: 10px;
   padding-bottom: 5px;
   border-bottom: 5px solid #303234; }
 
-/* line 106, src/sass/components.scss */
+/* line 190, src/sass/components.scss */
 .side-bar-list {
   margin: 10px 0px;
   padding-left: 10px;
@@ -195,11 +268,11 @@ hr {
   left: 0px;
   right: 10px; }
 
-/* line 118, src/sass/components.scss */
+/* line 202, src/sass/components.scss */
 .pointer {
   cursor: pointer; }
 
-/* line 122, src/sass/components.scss */
+/* line 206, src/sass/components.scss */
 .side-bar-loading {
   margin: 10px 0px;
   padding-left: 10px;
@@ -211,7 +284,7 @@ hr {
   left: 0px;
   right: 10px; }
 
-/* line 134, src/sass/components.scss */
+/* line 218, src/sass/components.scss */
 .label {
   font-size: 12px;
   padding: 4px;
@@ -219,21 +292,21 @@ hr {
   color: lightgrey;
   border: 0px; }
 
-/* line 142, src/sass/components.scss */
+/* line 226, src/sass/components.scss */
 .side-bar-item {
   padding: 4px 2px;
   font-size: 14px; }
 
-/* line 147, src/sass/components.scss */
+/* line 231, src/sass/components.scss */
 .side-bar-item-selected {
   background-color: #33373F;
   color: DEEPSKYBLUE; }
 
-/* line 152, src/sass/components.scss */
+/* line 236, src/sass/components.scss */
 .side-bar-item:hover {
   background-color: #303234; }
 
-/* line 156, src/sass/components.scss */
+/* line 240, src/sass/components.scss */
 .search-bar {
   border-radius: 4px;
   background-color: #303234;
@@ -241,7 +314,7 @@ hr {
   color: lightgrey;
   padding: 5px; }
 
-/* line 164, src/sass/components.scss */
+/* line 248, src/sass/components.scss */
 .main-view {
   padding: 15px;
   position: absolute;
@@ -257,7 +330,7 @@ hr {
   margin: 0px;
   padding: 10px;
   border-radius: 3px;
-  background-color: #262626; }
+  background-color: #2B2B2B; }
 
 /* line 8, src/sass/script_reference.scss */
 .script-header {
@@ -275,7 +348,7 @@ hr {
   margin: 0px;
   padding: 10px;
   border-radius: 3px;
-  background-color: #262626; }
+  background-color: #2B2B2B; }
 
 /* line 26, src/sass/script_reference.scss */
 .script-reference-summary {
@@ -300,8 +373,8 @@ hr {
   z-index: 10;
   padding: 3px;
   border-radius: 5px;
-  border: 2px solid #242424;
-  background-color: #262626;
+  border: 2px solid #2B2B2B;
+  background-color: #2B2B2B;
   margin-right: 10px; }
 
 /* line 53, src/sass/script_reference.scss */
@@ -370,7 +443,7 @@ hr {
 /* line 116, src/sass/script_reference.scss */
 .clear-button {
   font-size: 14px;
-  padding: 4px;
+  padding: 4px 10px;
   border-radius: 3px;
   background-color: #33373F;
   color: lightgrey;
@@ -387,7 +460,7 @@ hr {
 
 /* line 134, src/sass/script_reference.scss */
 .script-reference-detail-container {
-  border: 1px solid #262626;
+  border: 1px solid #2B2B2B;
   border-radius: 5px;
   padding: 12px;
   position: relative;
@@ -411,8 +484,8 @@ hr {
   z-index: 10;
   padding: 3px;
   border-radius: 5px;
-  border: 2px solid #242424;
-  background-color: #262626;
+  border: 2px solid #2B2B2B;
+  background-color: #2B2B2B;
   margin-right: 10px; }
 
 /* line 164, src/sass/script_reference.scss */
@@ -427,7 +500,7 @@ hr {
 
 /* line 174, src/sass/script_reference.scss */
 .script-reference-code-box {
-  border: 1px solid #262626;
+  border: 1px solid #2B2B2B;
   border-radius: 4px;
   margin: 0px;
   background-color: #33373F;
@@ -446,7 +519,7 @@ hr {
 /* line 192, src/sass/script_reference.scss */
 .copy-to-clipboard {
   padding: 5px 5px 6px 8px;
-  background-color: #262626;
+  background-color: #2B2B2B;
   border-right: 1px solid #1b1b1b;
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
@@ -454,7 +527,7 @@ hr {
 
 /* line 201, src/sass/script_reference.scss */
 .copy-to-clipboard:hover {
-  background-color: #373737; }
+  background-color: #44484F; }
 
 /* line 205, src/sass/script_reference.scss */
 .clipboard-notification {
@@ -464,7 +537,7 @@ hr {
   left: 12px;
   font-size: 10px;
   padding: 5px;
-  background-color: #262626;
+  background-color: #2B2B2B;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px; }
@@ -472,7 +545,7 @@ hr {
 /* line 218, src/sass/script_reference.scss */
 .script-reference-function {
   padding: 5px;
-  border: 1px solid #262626;
+  border: 1px solid #2B2B2B;
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   margin: 0px;
@@ -533,7 +606,7 @@ hr {
 
 /* line 280, src/sass/script_reference.scss */
 .hidden {
-  display: none; }
+  display: none !important; }
 
 /* line 284, src/sass/script_reference.scss */
 .submit-button {
@@ -554,7 +627,7 @@ hr {
 
 /* line 301, src/sass/script_reference.scss */
 .side-bar-loading {
-  background-color: #262626;
+  background-color: #2B2B2B;
   opacity: 0.9;
   z-index: 10; }
 
@@ -626,11 +699,34 @@ hr {
   position: absolute;
   bottom: 10px;
   right: 0px;
-  background-color: #262626;
+  background-color: #2B2B2B;
   left: 300px;
   height: 9px; }
 
 /* line 375, src/sass/script_reference.scss */
+.side-bar-toggle {
+  display: none; }
+
+/* line 379, src/sass/script_reference.scss */
+.side-bar-toggle:hover {
+  background-color: #44484F; }
+
+/* line 383, src/sass/script_reference.scss */
+.side-bar-bottom-toggle {
+  z-index: 10;
+  position: absolute;
+  bottom: 33px;
+  left: 0px;
+  right: 10px;
+  text-align: center;
+  cursor: pointer;
+  display: none; }
+
+/* line 394, src/sass/script_reference.scss */
+.side-bar-button:hover {
+  background-color: #44484F; }
+
+/* line 398, src/sass/script_reference.scss */
 .script-reference-footer-base {
   z-index: 10px;
   position: absolute;
